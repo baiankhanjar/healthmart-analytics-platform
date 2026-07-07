@@ -54,3 +54,54 @@ customers_df.to_csv(RAW_DIR / "customers.csv", index=False)
 
 print("customers.csv created successfully!")
 print(customers_df.head())
+
+# Generate loyalty accounts
+loyalty_accounts = []
+
+loyalty_customers = customers_df.sample(frac=0.70, random_state=42)
+
+for i, row in enumerate(loyalty_customers.itertuples(), start=1):
+    loyalty_accounts.append({
+        "loyalty_id": f"L{i:06}",
+        "customer_id": row.customer_id,
+        "loyalty_tier": random.choice(["Bronze", "Silver", "Gold", "Platinum"]),
+        "points_balance": random.randint(0, 10000),
+        "enrollment_date": fake.date_between(start_date=row.signup_date, end_date="today"),
+        "account_status": random.choice(["Active", "Active", "Active", "Inactive"])
+    })
+
+loyalty_accounts_df = pd.DataFrame(loyalty_accounts)
+
+loyalty_accounts_df.to_csv(RAW_DIR / "loyalty_accounts.csv", index=False)
+
+print("loyalty_accounts.csv created successfully!")
+print(loyalty_accounts_df.head())
+
+
+# Generate customer addresses
+customer_addresses = []
+address_id_counter = 1
+
+for row in customers_df.itertuples():
+    number_of_addresses = random.choice([1, 1, 1, 2])
+
+    for address_number in range(number_of_addresses):
+        address_type = "Home" if address_number == 0 else "Mailing"
+
+        customer_addresses.append({
+            "address_id": f"A{address_id_counter:06}",
+            "customer_id": row.customer_id,
+            "address_type": address_type,
+            "street_address": fake.street_address(),
+            "city": random.choice(FLORIDA_CITIES),
+            "state": "FL",
+            "zip_code": fake.zipcode()
+        })
+
+        address_id_counter += 1
+customer_addresses_df = pd.DataFrame(customer_addresses)
+
+customer_addresses_df.to_csv(RAW_DIR / "customer_addresses.csv", index=False)
+
+print("customer_addresses.csv created successfully!")
+print(customer_addresses_df.head())
