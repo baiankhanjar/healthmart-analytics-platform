@@ -105,3 +105,31 @@ customer_addresses_df.to_csv(RAW_DIR / "customer_addresses.csv", index=False)
 
 print("customer_addresses.csv created successfully!")
 print(customer_addresses_df.head())
+
+
+# Generate customer preferences
+customer_preferences = []
+
+for i, row in enumerate(customers_df.itertuples(), start=1):
+    email_opt_in = random.choice([True, True, True, False])
+    sms_opt_in = random.choice([True, True, False])
+
+    preferred_channel = random.choice(["Email", "SMS", "Mobile App", "None"])
+
+    customer_preferences.append({
+        "preference_id": f"PR{i:06}",
+        "customer_id": row.customer_id,
+        "email_opt_in": email_opt_in,
+        "sms_opt_in": sms_opt_in,
+        "preferred_language": random.choice(["English", "English", "English", "Spanish"]),
+        "preferred_channel": preferred_channel,
+        "last_updated_date": fake.date_between(start_date=row.signup_date, end_date="today")
+    })
+
+customer_preferences_df = pd.DataFrame(customer_preferences)
+
+customer_preferences_df.to_csv(RAW_DIR / "customer_preferences.csv", index=False)
+
+print("customer_preferences.csv created successfully!")
+print(customer_preferences_df.head())
+
