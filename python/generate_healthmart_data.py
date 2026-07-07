@@ -42,8 +42,6 @@ for i in range(1, 10001):
         "phone": fake.phone_number(),
         "gender": random.choice(["Male", "Female"]),
         "birth_date": fake.date_of_birth(minimum_age=18, maximum_age=90),
-        "city": random.choice(FLORIDA_CITIES),
-        "state": "FL",
         "signup_date": fake.date_between(start_date="-5y", end_date="today")
     })
 
