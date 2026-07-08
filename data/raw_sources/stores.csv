@@ -1,0 +1,353 @@
+store_id,store_name,city,state,region,store_type,open_date,active_status
+ST0001,HealthMart Miami #1,Miami,FL,South Florida,Retail,2017-01-05,Active
+ST0002,HealthMart Miami #2,Miami,FL,South Florida,Retail,2025-04-09,Active
+ST0003,HealthMart Miami #3,Miami,FL,South Florida,Retail,2017-12-04,Inactive
+ST0004,HealthMart Miami #4,Miami,FL,South Florida,Retail,2017-06-12,Inactive
+ST0005,HealthMart Miami #5,Miami,FL,South Florida,Pharmacy Plus,2016-05-27,Inactive
+ST0006,HealthMart Miami #6,Miami,FL,South Florida,Retail,2022-06-29,Inactive
+ST0007,HealthMart Miami #7,Miami,FL,South Florida,Retail,2020-04-24,Active
+ST0008,HealthMart Miami #8,Miami,FL,South Florida,Pharmacy Plus,2012-09-17,Active
+ST0009,HealthMart Miami #9,Miami,FL,South Florida,Retail,2021-02-11,Active
+ST0010,HealthMart Miami #10,Miami,FL,South Florida,Retail,2021-01-15,Active
+ST0011,HealthMart Miami #11,Miami,FL,South Florida,Retail,2015-10-10,Inactive
+ST0012,HealthMart Miami #12,Miami,FL,South Florida,Retail,2012-04-10,Inactive
+ST0013,HealthMart Miami #13,Miami,FL,South Florida,Retail,2018-05-02,Inactive
+ST0014,HealthMart Miami #14,Miami,FL,South Florida,Retail,2024-12-19,Active
+ST0015,HealthMart Miami #15,Miami,FL,South Florida,Retail,2019-12-18,Inactive
+ST0016,HealthMart Miami #16,Miami,FL,South Florida,Retail,2023-10-21,Active
+ST0017,HealthMart Miami #17,Miami,FL,South Florida,Retail,2019-11-01,Active
+ST0018,HealthMart Miami #18,Miami,FL,South Florida,Retail,2025-05-28,Active
+ST0019,HealthMart Miami #19,Miami,FL,South Florida,Retail,2020-06-25,Active
+ST0020,HealthMart Miami #20,Miami,FL,South Florida,Retail,2014-03-13,Active
+ST0021,HealthMart Miami #21,Miami,FL,South Florida,Pharmacy Plus,2022-04-06,Active
+ST0022,HealthMart Miami #22,Miami,FL,South Florida,Retail,2016-03-14,Active
+ST0023,HealthMart Miami #23,Miami,FL,South Florida,Retail,2020-05-31,Inactive
+ST0024,HealthMart Miami #24,Miami,FL,South Florida,Retail,2022-06-01,Active
+ST0025,HealthMart Miami #25,Miami,FL,South Florida,Pharmacy Plus,2018-07-13,Active
+ST0026,HealthMart Miami #26,Miami,FL,South Florida,Retail,2025-04-20,Active
+ST0027,HealthMart Miami #27,Miami,FL,South Florida,Pharmacy Plus,2013-08-28,Inactive
+ST0028,HealthMart Miami #28,Miami,FL,South Florida,Pharmacy Plus,2023-06-05,Active
+ST0029,HealthMart Miami #29,Miami,FL,South Florida,Retail,2013-06-03,Active
+ST0030,HealthMart Miami #30,Miami,FL,South Florida,Retail,2022-01-02,Active
+ST0031,HealthMart Miami #31,Miami,FL,South Florida,Pharmacy Plus,2024-06-29,Active
+ST0032,HealthMart Fort Lauderdale #32,Fort Lauderdale,FL,South Florida,Retail,2015-04-08,Inactive
+ST0033,HealthMart Fort Lauderdale #33,Fort Lauderdale,FL,South Florida,Retail,2016-08-15,Active
+ST0034,HealthMart Fort Lauderdale #34,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2024-07-15,Inactive
+ST0035,HealthMart Fort Lauderdale #35,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2017-06-11,Inactive
+ST0036,HealthMart Fort Lauderdale #36,Fort Lauderdale,FL,South Florida,Retail,2017-02-19,Active
+ST0037,HealthMart Fort Lauderdale #37,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2013-04-14,Active
+ST0038,HealthMart Fort Lauderdale #38,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2012-10-19,Active
+ST0039,HealthMart Fort Lauderdale #39,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2024-03-31,Inactive
+ST0040,HealthMart Fort Lauderdale #40,Fort Lauderdale,FL,South Florida,Retail,2021-10-14,Inactive
+ST0041,HealthMart Fort Lauderdale #41,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2013-06-02,Active
+ST0042,HealthMart Fort Lauderdale #42,Fort Lauderdale,FL,South Florida,Retail,2014-06-06,Active
+ST0043,HealthMart Fort Lauderdale #43,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2014-09-13,Active
+ST0044,HealthMart Fort Lauderdale #44,Fort Lauderdale,FL,South Florida,Retail,2011-09-11,Inactive
+ST0045,HealthMart Fort Lauderdale #45,Fort Lauderdale,FL,South Florida,Retail,2019-02-26,Inactive
+ST0046,HealthMart Fort Lauderdale #46,Fort Lauderdale,FL,South Florida,Retail,2014-04-06,Inactive
+ST0047,HealthMart Fort Lauderdale #47,Fort Lauderdale,FL,South Florida,Retail,2025-06-04,Inactive
+ST0048,HealthMart Fort Lauderdale #48,Fort Lauderdale,FL,South Florida,Retail,2016-09-27,Active
+ST0049,HealthMart Fort Lauderdale #49,Fort Lauderdale,FL,South Florida,Retail,2017-07-30,Active
+ST0050,HealthMart Fort Lauderdale #50,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2020-11-11,Active
+ST0051,HealthMart Fort Lauderdale #51,Fort Lauderdale,FL,South Florida,Retail,2016-04-15,Active
+ST0052,HealthMart Fort Lauderdale #52,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2023-10-28,Active
+ST0053,HealthMart Fort Lauderdale #53,Fort Lauderdale,FL,South Florida,Pharmacy Plus,2016-02-26,Active
+ST0054,HealthMart Fort Lauderdale #54,Fort Lauderdale,FL,South Florida,Retail,2016-04-04,Active
+ST0055,HealthMart Fort Lauderdale #55,Fort Lauderdale,FL,South Florida,Retail,2013-12-26,Active
+ST0056,HealthMart Pembroke Pines #56,Pembroke Pines,FL,South Florida,Retail,2011-08-04,Inactive
+ST0057,HealthMart Pembroke Pines #57,Pembroke Pines,FL,South Florida,Retail,2012-08-08,Active
+ST0058,HealthMart Pembroke Pines #58,Pembroke Pines,FL,South Florida,Retail,2017-01-22,Active
+ST0059,HealthMart Pembroke Pines #59,Pembroke Pines,FL,South Florida,Retail,2019-02-04,Active
+ST0060,HealthMart Pembroke Pines #60,Pembroke Pines,FL,South Florida,Retail,2013-10-01,Active
+ST0061,HealthMart Pembroke Pines #61,Pembroke Pines,FL,South Florida,Retail,2017-02-11,Active
+ST0062,HealthMart Pembroke Pines #62,Pembroke Pines,FL,South Florida,Pharmacy Plus,2015-10-13,Active
+ST0063,HealthMart Pembroke Pines #63,Pembroke Pines,FL,South Florida,Retail,2024-11-30,Active
+ST0064,HealthMart Pembroke Pines #64,Pembroke Pines,FL,South Florida,Retail,2019-10-25,Active
+ST0065,HealthMart Pembroke Pines #65,Pembroke Pines,FL,South Florida,Retail,2014-06-05,Active
+ST0066,HealthMart Pembroke Pines #66,Pembroke Pines,FL,South Florida,Retail,2012-07-31,Inactive
+ST0067,HealthMart Pembroke Pines #67,Pembroke Pines,FL,South Florida,Pharmacy Plus,2021-01-07,Active
+ST0068,HealthMart Pembroke Pines #68,Pembroke Pines,FL,South Florida,Retail,2024-02-06,Active
+ST0069,HealthMart Pembroke Pines #69,Pembroke Pines,FL,South Florida,Pharmacy Plus,2015-05-24,Active
+ST0070,HealthMart Pembroke Pines #70,Pembroke Pines,FL,South Florida,Retail,2015-05-03,Active
+ST0071,HealthMart Pembroke Pines #71,Pembroke Pines,FL,South Florida,Retail,2011-11-22,Inactive
+ST0072,HealthMart Pembroke Pines #72,Pembroke Pines,FL,South Florida,Retail,2020-03-03,Inactive
+ST0073,HealthMart Pembroke Pines #73,Pembroke Pines,FL,South Florida,Retail,2024-04-21,Active
+ST0074,HealthMart Pembroke Pines #74,Pembroke Pines,FL,South Florida,Retail,2014-02-10,Inactive
+ST0075,HealthMart Pembroke Pines #75,Pembroke Pines,FL,South Florida,Retail,2020-09-03,Active
+ST0076,HealthMart Pembroke Pines #76,Pembroke Pines,FL,South Florida,Retail,2012-07-28,Active
+ST0077,HealthMart Pembroke Pines #77,Pembroke Pines,FL,South Florida,Retail,2012-08-06,Active
+ST0078,HealthMart Pembroke Pines #78,Pembroke Pines,FL,South Florida,Retail,2011-10-08,Active
+ST0079,HealthMart Pembroke Pines #79,Pembroke Pines,FL,South Florida,Retail,2015-01-08,Active
+ST0080,HealthMart Pembroke Pines #80,Pembroke Pines,FL,South Florida,Retail,2013-01-31,Active
+ST0081,HealthMart Pembroke Pines #81,Pembroke Pines,FL,South Florida,Retail,2020-04-17,Active
+ST0082,HealthMart Pembroke Pines #82,Pembroke Pines,FL,South Florida,Pharmacy Plus,2023-09-19,Active
+ST0083,HealthMart Pembroke Pines #83,Pembroke Pines,FL,South Florida,Retail,2015-09-19,Active
+ST0084,HealthMart Pembroke Pines #84,Pembroke Pines,FL,South Florida,Retail,2023-10-11,Active
+ST0085,HealthMart Pembroke Pines #85,Pembroke Pines,FL,South Florida,Retail,2016-06-24,Active
+ST0086,HealthMart Pembroke Pines #86,Pembroke Pines,FL,South Florida,Retail,2012-04-26,Active
+ST0087,HealthMart Pembroke Pines #87,Pembroke Pines,FL,South Florida,Retail,2021-02-21,Active
+ST0088,HealthMart Pembroke Pines #88,Pembroke Pines,FL,South Florida,Retail,2019-08-09,Active
+ST0089,HealthMart Hollywood #89,Hollywood,FL,South Florida,Retail,2022-02-16,Active
+ST0090,HealthMart Hollywood #90,Hollywood,FL,South Florida,Retail,2012-04-01,Active
+ST0091,HealthMart Hollywood #91,Hollywood,FL,South Florida,Retail,2013-11-01,Active
+ST0092,HealthMart Hollywood #92,Hollywood,FL,South Florida,Pharmacy Plus,2023-12-27,Active
+ST0093,HealthMart Hollywood #93,Hollywood,FL,South Florida,Retail,2015-07-02,Inactive
+ST0094,HealthMart Hollywood #94,Hollywood,FL,South Florida,Retail,2020-02-23,Inactive
+ST0095,HealthMart Hollywood #95,Hollywood,FL,South Florida,Retail,2012-09-29,Active
+ST0096,HealthMart Hollywood #96,Hollywood,FL,South Florida,Retail,2015-05-21,Active
+ST0097,HealthMart Hollywood #97,Hollywood,FL,South Florida,Retail,2023-02-16,Active
+ST0098,HealthMart Hollywood #98,Hollywood,FL,South Florida,Retail,2022-09-16,Active
+ST0099,HealthMart Hollywood #99,Hollywood,FL,South Florida,Retail,2024-11-13,Active
+ST0100,HealthMart Hollywood #100,Hollywood,FL,South Florida,Pharmacy Plus,2021-08-21,Inactive
+ST0101,HealthMart Hollywood #101,Hollywood,FL,South Florida,Retail,2022-11-05,Active
+ST0102,HealthMart Hollywood #102,Hollywood,FL,South Florida,Retail,2025-01-31,Inactive
+ST0103,HealthMart Hollywood #103,Hollywood,FL,South Florida,Retail,2014-10-06,Active
+ST0104,HealthMart Hollywood #104,Hollywood,FL,South Florida,Retail,2016-04-26,Active
+ST0105,HealthMart Davie #105,Davie,FL,South Florida,Pharmacy Plus,2023-05-27,Inactive
+ST0106,HealthMart Davie #106,Davie,FL,South Florida,Retail,2017-11-21,Active
+ST0107,HealthMart Davie #107,Davie,FL,South Florida,Retail,2015-02-04,Inactive
+ST0108,HealthMart Davie #108,Davie,FL,South Florida,Retail,2024-09-27,Inactive
+ST0109,HealthMart Davie #109,Davie,FL,South Florida,Retail,2015-06-08,Active
+ST0110,HealthMart Davie #110,Davie,FL,South Florida,Retail,2023-03-30,Active
+ST0111,HealthMart Davie #111,Davie,FL,South Florida,Retail,2019-11-14,Active
+ST0112,HealthMart Davie #112,Davie,FL,South Florida,Retail,2019-11-08,Active
+ST0113,HealthMart Davie #113,Davie,FL,South Florida,Retail,2016-07-28,Active
+ST0114,HealthMart Davie #114,Davie,FL,South Florida,Retail,2013-04-13,Active
+ST0115,HealthMart Davie #115,Davie,FL,South Florida,Retail,2019-05-17,Inactive
+ST0116,HealthMart Davie #116,Davie,FL,South Florida,Retail,2012-12-22,Active
+ST0117,HealthMart Davie #117,Davie,FL,South Florida,Retail,2020-01-09,Inactive
+ST0118,HealthMart Davie #118,Davie,FL,South Florida,Retail,2011-10-30,Active
+ST0119,HealthMart Davie #119,Davie,FL,South Florida,Retail,2023-01-18,Inactive
+ST0120,HealthMart Davie #120,Davie,FL,South Florida,Retail,2025-06-22,Active
+ST0121,HealthMart Davie #121,Davie,FL,South Florida,Retail,2017-05-15,Active
+ST0122,HealthMart Davie #122,Davie,FL,South Florida,Retail,2021-08-09,Active
+ST0123,HealthMart Davie #123,Davie,FL,South Florida,Retail,2013-06-19,Inactive
+ST0124,HealthMart Davie #124,Davie,FL,South Florida,Retail,2023-05-24,Active
+ST0125,HealthMart Davie #125,Davie,FL,South Florida,Retail,2018-09-09,Active
+ST0126,HealthMart Davie #126,Davie,FL,South Florida,Retail,2020-05-04,Inactive
+ST0127,HealthMart Davie #127,Davie,FL,South Florida,Retail,2024-01-28,Active
+ST0128,HealthMart Davie #128,Davie,FL,South Florida,Retail,2022-07-06,Active
+ST0129,HealthMart Davie #129,Davie,FL,South Florida,Retail,2020-05-03,Active
+ST0130,HealthMart Davie #130,Davie,FL,South Florida,Pharmacy Plus,2018-01-05,Active
+ST0131,HealthMart Davie #131,Davie,FL,South Florida,Pharmacy Plus,2015-04-10,Active
+ST0132,HealthMart Davie #132,Davie,FL,South Florida,Pharmacy Plus,2014-08-03,Active
+ST0133,HealthMart Davie #133,Davie,FL,South Florida,Pharmacy Plus,2021-11-11,Active
+ST0134,HealthMart Davie #134,Davie,FL,South Florida,Retail,2012-01-30,Inactive
+ST0135,HealthMart Davie #135,Davie,FL,South Florida,Retail,2016-07-27,Active
+ST0136,HealthMart Davie #136,Davie,FL,South Florida,Retail,2016-11-06,Active
+ST0137,HealthMart Boca Raton #137,Boca Raton,FL,South Florida,Retail,2021-06-30,Inactive
+ST0138,HealthMart Boca Raton #138,Boca Raton,FL,South Florida,Retail,2013-05-09,Active
+ST0139,HealthMart Boca Raton #139,Boca Raton,FL,South Florida,Retail,2017-01-27,Inactive
+ST0140,HealthMart Boca Raton #140,Boca Raton,FL,South Florida,Retail,2017-09-14,Active
+ST0141,HealthMart Boca Raton #141,Boca Raton,FL,South Florida,Retail,2016-08-10,Active
+ST0142,HealthMart Boca Raton #142,Boca Raton,FL,South Florida,Retail,2012-03-07,Active
+ST0143,HealthMart Boca Raton #143,Boca Raton,FL,South Florida,Retail,2020-06-12,Active
+ST0144,HealthMart Boca Raton #144,Boca Raton,FL,South Florida,Retail,2023-10-14,Active
+ST0145,HealthMart Boca Raton #145,Boca Raton,FL,South Florida,Retail,2013-02-10,Inactive
+ST0146,HealthMart Boca Raton #146,Boca Raton,FL,South Florida,Retail,2023-01-25,Active
+ST0147,HealthMart Boca Raton #147,Boca Raton,FL,South Florida,Retail,2023-06-22,Active
+ST0148,HealthMart Boca Raton #148,Boca Raton,FL,South Florida,Retail,2019-11-15,Inactive
+ST0149,HealthMart Boca Raton #149,Boca Raton,FL,South Florida,Retail,2024-01-17,Active
+ST0150,HealthMart Boca Raton #150,Boca Raton,FL,South Florida,Retail,2012-02-17,Active
+ST0151,HealthMart Boca Raton #151,Boca Raton,FL,South Florida,Retail,2023-10-09,Active
+ST0152,HealthMart Boca Raton #152,Boca Raton,FL,South Florida,Retail,2017-10-10,Active
+ST0153,HealthMart Boca Raton #153,Boca Raton,FL,South Florida,Retail,2025-07-03,Active
+ST0154,HealthMart Boca Raton #154,Boca Raton,FL,South Florida,Retail,2024-06-24,Inactive
+ST0155,HealthMart Boca Raton #155,Boca Raton,FL,South Florida,Retail,2020-06-17,Active
+ST0156,HealthMart Boca Raton #156,Boca Raton,FL,South Florida,Pharmacy Plus,2021-06-09,Active
+ST0157,HealthMart Boca Raton #157,Boca Raton,FL,South Florida,Retail,2014-05-23,Active
+ST0158,HealthMart Boca Raton #158,Boca Raton,FL,South Florida,Retail,2022-01-08,Active
+ST0159,HealthMart Boca Raton #159,Boca Raton,FL,South Florida,Retail,2020-06-04,Active
+ST0160,HealthMart Boca Raton #160,Boca Raton,FL,South Florida,Pharmacy Plus,2018-08-20,Inactive
+ST0161,HealthMart Boca Raton #161,Boca Raton,FL,South Florida,Retail,2012-12-15,Active
+ST0162,HealthMart Boca Raton #162,Boca Raton,FL,South Florida,Pharmacy Plus,2012-07-26,Active
+ST0163,HealthMart Boca Raton #163,Boca Raton,FL,South Florida,Retail,2012-07-19,Active
+ST0164,HealthMart Boca Raton #164,Boca Raton,FL,South Florida,Retail,2019-03-01,Active
+ST0165,HealthMart Boca Raton #165,Boca Raton,FL,South Florida,Retail,2019-09-13,Active
+ST0166,HealthMart Boca Raton #166,Boca Raton,FL,South Florida,Pharmacy Plus,2024-02-02,Inactive
+ST0167,HealthMart Boca Raton #167,Boca Raton,FL,South Florida,Retail,2015-04-02,Inactive
+ST0168,HealthMart Orlando #168,Orlando,FL,Central Florida,Retail,2015-01-06,Inactive
+ST0169,HealthMart Orlando #169,Orlando,FL,Central Florida,Retail,2012-04-19,Active
+ST0170,HealthMart Orlando #170,Orlando,FL,Central Florida,Pharmacy Plus,2022-12-30,Active
+ST0171,HealthMart Orlando #171,Orlando,FL,Central Florida,Retail,2021-03-25,Active
+ST0172,HealthMart Orlando #172,Orlando,FL,Central Florida,Retail,2018-12-29,Active
+ST0173,HealthMart Orlando #173,Orlando,FL,Central Florida,Retail,2013-02-20,Active
+ST0174,HealthMart Orlando #174,Orlando,FL,Central Florida,Pharmacy Plus,2018-08-08,Active
+ST0175,HealthMart Orlando #175,Orlando,FL,Central Florida,Retail,2016-04-05,Active
+ST0176,HealthMart Orlando #176,Orlando,FL,Central Florida,Retail,2025-05-26,Active
+ST0177,HealthMart Orlando #177,Orlando,FL,Central Florida,Retail,2012-04-06,Active
+ST0178,HealthMart Orlando #178,Orlando,FL,Central Florida,Pharmacy Plus,2012-11-08,Active
+ST0179,HealthMart Orlando #179,Orlando,FL,Central Florida,Retail,2022-01-20,Active
+ST0180,HealthMart Orlando #180,Orlando,FL,Central Florida,Retail,2019-01-21,Inactive
+ST0181,HealthMart Orlando #181,Orlando,FL,Central Florida,Retail,2024-10-28,Active
+ST0182,HealthMart Orlando #182,Orlando,FL,Central Florida,Retail,2014-02-11,Active
+ST0183,HealthMart Orlando #183,Orlando,FL,Central Florida,Pharmacy Plus,2014-10-20,Active
+ST0184,HealthMart Orlando #184,Orlando,FL,Central Florida,Retail,2021-03-29,Active
+ST0185,HealthMart Orlando #185,Orlando,FL,Central Florida,Retail,2013-03-04,Inactive
+ST0186,HealthMart Orlando #186,Orlando,FL,Central Florida,Pharmacy Plus,2013-07-11,Active
+ST0187,HealthMart Orlando #187,Orlando,FL,Central Florida,Retail,2015-01-23,Inactive
+ST0188,HealthMart Orlando #188,Orlando,FL,Central Florida,Retail,2019-04-28,Active
+ST0189,HealthMart Orlando #189,Orlando,FL,Central Florida,Retail,2015-11-22,Active
+ST0190,HealthMart Orlando #190,Orlando,FL,Central Florida,Retail,2020-03-04,Inactive
+ST0191,HealthMart Tampa #191,Tampa,FL,Central Florida,Retail,2017-06-02,Active
+ST0192,HealthMart Tampa #192,Tampa,FL,Central Florida,Retail,2023-01-19,Active
+ST0193,HealthMart Tampa #193,Tampa,FL,Central Florida,Retail,2024-03-29,Inactive
+ST0194,HealthMart Tampa #194,Tampa,FL,Central Florida,Retail,2019-05-03,Active
+ST0195,HealthMart Tampa #195,Tampa,FL,Central Florida,Pharmacy Plus,2019-07-22,Active
+ST0196,HealthMart Tampa #196,Tampa,FL,Central Florida,Pharmacy Plus,2024-09-12,Inactive
+ST0197,HealthMart Tampa #197,Tampa,FL,Central Florida,Retail,2013-09-16,Active
+ST0198,HealthMart Tampa #198,Tampa,FL,Central Florida,Retail,2018-05-31,Active
+ST0199,HealthMart Tampa #199,Tampa,FL,Central Florida,Retail,2022-04-21,Active
+ST0200,HealthMart Tampa #200,Tampa,FL,Central Florida,Pharmacy Plus,2020-08-11,Inactive
+ST0201,HealthMart Tampa #201,Tampa,FL,Central Florida,Retail,2017-06-05,Active
+ST0202,HealthMart Tampa #202,Tampa,FL,Central Florida,Retail,2021-10-02,Active
+ST0203,HealthMart Tampa #203,Tampa,FL,Central Florida,Retail,2012-01-17,Active
+ST0204,HealthMart Tampa #204,Tampa,FL,Central Florida,Retail,2020-04-11,Active
+ST0205,HealthMart Tampa #205,Tampa,FL,Central Florida,Retail,2018-07-30,Active
+ST0206,HealthMart Tampa #206,Tampa,FL,Central Florida,Retail,2011-11-18,Inactive
+ST0207,HealthMart Tampa #207,Tampa,FL,Central Florida,Retail,2023-09-07,Active
+ST0208,HealthMart Tampa #208,Tampa,FL,Central Florida,Retail,2015-10-13,Active
+ST0209,HealthMart Tampa #209,Tampa,FL,Central Florida,Retail,2013-03-09,Active
+ST0210,HealthMart Tampa #210,Tampa,FL,Central Florida,Retail,2016-04-06,Inactive
+ST0211,HealthMart Tampa #211,Tampa,FL,Central Florida,Pharmacy Plus,2021-04-06,Inactive
+ST0212,HealthMart Tampa #212,Tampa,FL,Central Florida,Retail,2021-12-07,Active
+ST0213,HealthMart Tampa #213,Tampa,FL,Central Florida,Retail,2015-12-28,Inactive
+ST0214,HealthMart Tampa #214,Tampa,FL,Central Florida,Retail,2018-12-14,Active
+ST0215,HealthMart Tampa #215,Tampa,FL,Central Florida,Pharmacy Plus,2012-05-27,Active
+ST0216,HealthMart Tampa #216,Tampa,FL,Central Florida,Pharmacy Plus,2017-06-19,Active
+ST0217,HealthMart Tampa #217,Tampa,FL,Central Florida,Retail,2017-11-02,Active
+ST0218,HealthMart Sarasota #218,Sarasota,FL,Central Florida,Retail,2014-05-11,Active
+ST0219,HealthMart Sarasota #219,Sarasota,FL,Central Florida,Retail,2021-02-27,Active
+ST0220,HealthMart Sarasota #220,Sarasota,FL,Central Florida,Pharmacy Plus,2019-11-24,Inactive
+ST0221,HealthMart Sarasota #221,Sarasota,FL,Central Florida,Retail,2012-06-30,Inactive
+ST0222,HealthMart Sarasota #222,Sarasota,FL,Central Florida,Retail,2020-03-16,Active
+ST0223,HealthMart Sarasota #223,Sarasota,FL,Central Florida,Retail,2017-05-06,Active
+ST0224,HealthMart Sarasota #224,Sarasota,FL,Central Florida,Pharmacy Plus,2017-10-12,Active
+ST0225,HealthMart Sarasota #225,Sarasota,FL,Central Florida,Retail,2016-12-24,Inactive
+ST0226,HealthMart Sarasota #226,Sarasota,FL,Central Florida,Retail,2019-03-04,Active
+ST0227,HealthMart Sarasota #227,Sarasota,FL,Central Florida,Retail,2020-12-29,Inactive
+ST0228,HealthMart Sarasota #228,Sarasota,FL,Central Florida,Pharmacy Plus,2020-09-07,Inactive
+ST0229,HealthMart Sarasota #229,Sarasota,FL,Central Florida,Retail,2011-09-10,Active
+ST0230,HealthMart Sarasota #230,Sarasota,FL,Central Florida,Pharmacy Plus,2013-02-14,Active
+ST0231,HealthMart Sarasota #231,Sarasota,FL,Central Florida,Retail,2019-03-09,Active
+ST0232,HealthMart Sarasota #232,Sarasota,FL,Central Florida,Retail,2019-02-07,Active
+ST0233,HealthMart Sarasota #233,Sarasota,FL,Central Florida,Pharmacy Plus,2016-05-21,Inactive
+ST0234,HealthMart Sarasota #234,Sarasota,FL,Central Florida,Retail,2018-05-31,Inactive
+ST0235,HealthMart Sarasota #235,Sarasota,FL,Central Florida,Retail,2014-07-13,Active
+ST0236,HealthMart Sarasota #236,Sarasota,FL,Central Florida,Retail,2021-06-18,Active
+ST0237,HealthMart Sarasota #237,Sarasota,FL,Central Florida,Pharmacy Plus,2014-04-23,Active
+ST0238,HealthMart Sarasota #238,Sarasota,FL,Central Florida,Pharmacy Plus,2023-12-30,Active
+ST0239,HealthMart Sarasota #239,Sarasota,FL,Central Florida,Retail,2014-03-19,Inactive
+ST0240,HealthMart Sarasota #240,Sarasota,FL,Central Florida,Retail,2014-03-31,Active
+ST0241,HealthMart Sarasota #241,Sarasota,FL,Central Florida,Retail,2021-08-12,Inactive
+ST0242,HealthMart Sarasota #242,Sarasota,FL,Central Florida,Retail,2021-12-19,Active
+ST0243,HealthMart Sarasota #243,Sarasota,FL,Central Florida,Pharmacy Plus,2022-09-30,Active
+ST0244,HealthMart Sarasota #244,Sarasota,FL,Central Florida,Retail,2014-03-17,Active
+ST0245,HealthMart Sarasota #245,Sarasota,FL,Central Florida,Retail,2016-04-22,Active
+ST0246,HealthMart Sarasota #246,Sarasota,FL,Central Florida,Retail,2023-05-15,Inactive
+ST0247,HealthMart Sarasota #247,Sarasota,FL,Central Florida,Pharmacy Plus,2022-12-17,Inactive
+ST0248,HealthMart Sarasota #248,Sarasota,FL,Central Florida,Pharmacy Plus,2013-01-26,Active
+ST0249,HealthMart Jacksonville #249,Jacksonville,FL,North Florida,Pharmacy Plus,2017-03-13,Active
+ST0250,HealthMart Jacksonville #250,Jacksonville,FL,North Florida,Retail,2014-05-29,Active
+ST0251,HealthMart Jacksonville #251,Jacksonville,FL,North Florida,Retail,2022-08-20,Active
+ST0252,HealthMart Jacksonville #252,Jacksonville,FL,North Florida,Retail,2018-12-14,Active
+ST0253,HealthMart Jacksonville #253,Jacksonville,FL,North Florida,Retail,2015-10-25,Inactive
+ST0254,HealthMart Jacksonville #254,Jacksonville,FL,North Florida,Retail,2021-10-04,Active
+ST0255,HealthMart Jacksonville #255,Jacksonville,FL,North Florida,Retail,2024-08-22,Active
+ST0256,HealthMart Jacksonville #256,Jacksonville,FL,North Florida,Pharmacy Plus,2015-01-14,Active
+ST0257,HealthMart Jacksonville #257,Jacksonville,FL,North Florida,Retail,2020-04-27,Active
+ST0258,HealthMart Jacksonville #258,Jacksonville,FL,North Florida,Retail,2021-04-08,Inactive
+ST0259,HealthMart Jacksonville #259,Jacksonville,FL,North Florida,Pharmacy Plus,2020-10-13,Active
+ST0260,HealthMart Jacksonville #260,Jacksonville,FL,North Florida,Retail,2025-07-04,Inactive
+ST0261,HealthMart Jacksonville #261,Jacksonville,FL,North Florida,Retail,2013-07-10,Active
+ST0262,HealthMart Jacksonville #262,Jacksonville,FL,North Florida,Pharmacy Plus,2023-06-27,Active
+ST0263,HealthMart Jacksonville #263,Jacksonville,FL,North Florida,Retail,2015-07-07,Inactive
+ST0264,HealthMart Jacksonville #264,Jacksonville,FL,North Florida,Retail,2018-07-06,Active
+ST0265,HealthMart Jacksonville #265,Jacksonville,FL,North Florida,Retail,2021-09-23,Active
+ST0266,HealthMart Jacksonville #266,Jacksonville,FL,North Florida,Retail,2023-10-04,Active
+ST0267,HealthMart Jacksonville #267,Jacksonville,FL,North Florida,Retail,2016-02-15,Active
+ST0268,HealthMart Jacksonville #268,Jacksonville,FL,North Florida,Retail,2023-04-09,Active
+ST0269,HealthMart Jacksonville #269,Jacksonville,FL,North Florida,Retail,2024-04-13,Inactive
+ST0270,HealthMart Jacksonville #270,Jacksonville,FL,North Florida,Retail,2023-02-14,Active
+ST0271,HealthMart Jacksonville #271,Jacksonville,FL,North Florida,Retail,2020-11-17,Active
+ST0272,HealthMart Jacksonville #272,Jacksonville,FL,North Florida,Retail,2013-02-16,Active
+ST0273,HealthMart Jacksonville #273,Jacksonville,FL,North Florida,Pharmacy Plus,2014-03-21,Active
+ST0274,HealthMart Jacksonville #274,Jacksonville,FL,North Florida,Pharmacy Plus,2013-02-22,Active
+ST0275,HealthMart Jacksonville #275,Jacksonville,FL,North Florida,Pharmacy Plus,2023-12-14,Active
+ST0276,HealthMart Gainesville #276,Gainesville,FL,North Florida,Retail,2020-06-04,Active
+ST0277,HealthMart Gainesville #277,Gainesville,FL,North Florida,Retail,2015-10-01,Active
+ST0278,HealthMart Gainesville #278,Gainesville,FL,North Florida,Pharmacy Plus,2017-03-18,Active
+ST0279,HealthMart Gainesville #279,Gainesville,FL,North Florida,Pharmacy Plus,2017-04-15,Active
+ST0280,HealthMart Gainesville #280,Gainesville,FL,North Florida,Retail,2021-04-13,Inactive
+ST0281,HealthMart Gainesville #281,Gainesville,FL,North Florida,Pharmacy Plus,2018-03-28,Inactive
+ST0282,HealthMart Gainesville #282,Gainesville,FL,North Florida,Retail,2021-08-18,Active
+ST0283,HealthMart Gainesville #283,Gainesville,FL,North Florida,Pharmacy Plus,2018-11-27,Active
+ST0284,HealthMart Gainesville #284,Gainesville,FL,North Florida,Retail,2013-05-06,Active
+ST0285,HealthMart Gainesville #285,Gainesville,FL,North Florida,Retail,2014-10-18,Inactive
+ST0286,HealthMart Gainesville #286,Gainesville,FL,North Florida,Retail,2022-08-24,Active
+ST0287,HealthMart Gainesville #287,Gainesville,FL,North Florida,Retail,2014-12-08,Active
+ST0288,HealthMart Gainesville #288,Gainesville,FL,North Florida,Retail,2022-01-18,Active
+ST0289,HealthMart Gainesville #289,Gainesville,FL,North Florida,Retail,2018-08-21,Active
+ST0290,HealthMart Gainesville #290,Gainesville,FL,North Florida,Pharmacy Plus,2019-04-18,Inactive
+ST0291,HealthMart Gainesville #291,Gainesville,FL,North Florida,Retail,2016-06-07,Active
+ST0292,HealthMart Gainesville #292,Gainesville,FL,North Florida,Retail,2015-02-11,Inactive
+ST0293,HealthMart Gainesville #293,Gainesville,FL,North Florida,Retail,2015-03-22,Active
+ST0294,HealthMart Gainesville #294,Gainesville,FL,North Florida,Pharmacy Plus,2012-08-31,Inactive
+ST0295,HealthMart Gainesville #295,Gainesville,FL,North Florida,Retail,2021-10-28,Active
+ST0296,HealthMart Gainesville #296,Gainesville,FL,North Florida,Retail,2014-06-08,Active
+ST0297,HealthMart Gainesville #297,Gainesville,FL,North Florida,Retail,2017-08-15,Inactive
+ST0298,HealthMart Gainesville #298,Gainesville,FL,North Florida,Retail,2024-02-13,Inactive
+ST0299,HealthMart Gainesville #299,Gainesville,FL,North Florida,Pharmacy Plus,2017-04-02,Active
+ST0300,HealthMart Gainesville #300,Gainesville,FL,North Florida,Retail,2016-01-19,Inactive
+ST0301,HealthMart Gainesville #301,Gainesville,FL,North Florida,Retail,2011-11-26,Inactive
+ST0302,HealthMart Gainesville #302,Gainesville,FL,North Florida,Pharmacy Plus,2012-12-17,Inactive
+ST0303,HealthMart Gainesville #303,Gainesville,FL,North Florida,Pharmacy Plus,2012-04-22,Active
+ST0304,HealthMart Gainesville #304,Gainesville,FL,North Florida,Retail,2021-11-15,Inactive
+ST0305,HealthMart Gainesville #305,Gainesville,FL,North Florida,Pharmacy Plus,2012-07-08,Active
+ST0306,HealthMart Tallahassee #306,Tallahassee,FL,North Florida,Retail,2016-03-18,Inactive
+ST0307,HealthMart Tallahassee #307,Tallahassee,FL,North Florida,Retail,2017-09-12,Active
+ST0308,HealthMart Tallahassee #308,Tallahassee,FL,North Florida,Retail,2017-01-31,Active
+ST0309,HealthMart Tallahassee #309,Tallahassee,FL,North Florida,Retail,2020-11-11,Active
+ST0310,HealthMart Tallahassee #310,Tallahassee,FL,North Florida,Pharmacy Plus,2021-09-29,Active
+ST0311,HealthMart Tallahassee #311,Tallahassee,FL,North Florida,Retail,2018-03-29,Active
+ST0312,HealthMart Tallahassee #312,Tallahassee,FL,North Florida,Retail,2023-06-12,Active
+ST0313,HealthMart Tallahassee #313,Tallahassee,FL,North Florida,Retail,2020-05-01,Active
+ST0314,HealthMart Tallahassee #314,Tallahassee,FL,North Florida,Retail,2016-06-08,Active
+ST0315,HealthMart Tallahassee #315,Tallahassee,FL,North Florida,Retail,2013-10-28,Active
+ST0316,HealthMart Tallahassee #316,Tallahassee,FL,North Florida,Retail,2017-09-23,Inactive
+ST0317,HealthMart Tallahassee #317,Tallahassee,FL,North Florida,Retail,2013-06-07,Active
+ST0318,HealthMart Tallahassee #318,Tallahassee,FL,North Florida,Retail,2023-02-28,Inactive
+ST0319,HealthMart Tallahassee #319,Tallahassee,FL,North Florida,Retail,2013-05-15,Active
+ST0320,HealthMart Tallahassee #320,Tallahassee,FL,North Florida,Pharmacy Plus,2021-01-20,Active
+ST0321,HealthMart Tallahassee #321,Tallahassee,FL,North Florida,Retail,2021-03-13,Inactive
+ST0322,HealthMart Naples #322,Naples,FL,West Florida,Pharmacy Plus,2011-10-24,Active
+ST0323,HealthMart Naples #323,Naples,FL,West Florida,Retail,2021-07-06,Active
+ST0324,HealthMart Naples #324,Naples,FL,West Florida,Retail,2012-12-29,Inactive
+ST0325,HealthMart Naples #325,Naples,FL,West Florida,Pharmacy Plus,2020-07-05,Inactive
+ST0326,HealthMart Naples #326,Naples,FL,West Florida,Retail,2020-01-09,Active
+ST0327,HealthMart Naples #327,Naples,FL,West Florida,Retail,2012-08-17,Inactive
+ST0328,HealthMart Naples #328,Naples,FL,West Florida,Retail,2023-01-09,Active
+ST0329,HealthMart Naples #329,Naples,FL,West Florida,Retail,2025-01-22,Active
+ST0330,HealthMart Naples #330,Naples,FL,West Florida,Retail,2024-12-09,Active
+ST0331,HealthMart Naples #331,Naples,FL,West Florida,Retail,2021-05-20,Active
+ST0332,HealthMart Naples #332,Naples,FL,West Florida,Pharmacy Plus,2025-03-29,Active
+ST0333,HealthMart Naples #333,Naples,FL,West Florida,Retail,2013-12-07,Active
+ST0334,HealthMart Naples #334,Naples,FL,West Florida,Retail,2019-10-08,Inactive
+ST0335,HealthMart Naples #335,Naples,FL,West Florida,Retail,2025-02-26,Active
+ST0336,HealthMart Naples #336,Naples,FL,West Florida,Retail,2014-10-06,Active
+ST0337,HealthMart Naples #337,Naples,FL,West Florida,Retail,2018-10-09,Active
+ST0338,HealthMart Naples #338,Naples,FL,West Florida,Retail,2015-09-20,Active
+ST0339,HealthMart Naples #339,Naples,FL,West Florida,Retail,2021-11-08,Active
+ST0340,HealthMart Naples #340,Naples,FL,West Florida,Retail,2014-06-14,Active
+ST0341,HealthMart Naples #341,Naples,FL,West Florida,Retail,2017-03-30,Inactive
+ST0342,HealthMart Naples #342,Naples,FL,West Florida,Retail,2025-04-12,Active
+ST0343,HealthMart Naples #343,Naples,FL,West Florida,Retail,2018-11-08,Active
+ST0344,HealthMart Naples #344,Naples,FL,West Florida,Retail,2015-12-08,Active
+ST0345,HealthMart Naples #345,Naples,FL,West Florida,Retail,2019-02-03,Inactive
+ST0346,HealthMart Naples #346,Naples,FL,West Florida,Retail,2018-11-28,Active
+ST0347,HealthMart Naples #347,Naples,FL,West Florida,Pharmacy Plus,2022-01-18,Active
+ST0348,HealthMart Naples #348,Naples,FL,West Florida,Retail,2016-07-11,Active
+ST0349,HealthMart Naples #349,Naples,FL,West Florida,Retail,2022-12-24,Active
+ST0350,HealthMart Naples #350,Naples,FL,West Florida,Pharmacy Plus,2017-01-27,Active
+ST0351,HealthMart Naples #351,Naples,FL,West Florida,Retail,2021-02-13,Active
+ST0352,HealthMart Naples #352,Naples,FL,West Florida,Pharmacy Plus,2017-05-28,Active

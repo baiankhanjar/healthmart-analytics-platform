@@ -1,0 +1,101 @@
+supplier_id,supplier_name,supplier_type,country,state,city,contact_email,phone,active_status
+S0001,Montgomery and Sons,Personal Care,USA,FL,Tampa,lori20@mcdaniel.net,(880)848-9303,Active
+S0002,Gonzales-Pena,OTC Products,USA,FL,Fort Lauderdale,hancocklawrence@simon-king.org,(839)620-8697x656,Active
+S0003,Gonzalez-Johnson,Personal Care,USA,FL,Hollywood,gary17@washington.com,932.689.3416x814,Inactive
+S0004,"Mckay, Johnson and Smith",Medical Device,USA,FL,Miami,johndelacruz@horton-miller.com,8835411732,Active
+S0005,Duran-Walsh,Medical Device,USA,FL,Tallahassee,jamescrane@jordan.com,+1-775-635-2465,Inactive
+S0006,Williams PLC,Personal Care,USA,FL,Jacksonville,nsmith@lopez-lawson.biz,831.215.8007x842,Active
+S0007,"Johnson, Davis and Shields",OTC Products,USA,FL,Tampa,carolyn10@terrell-garcia.org,210.532.4001x624,Active
+S0008,Morgan Inc,Personal Care,USA,FL,Coral Springs,kevin59@ellison.com,(934)753-5068,Active
+S0009,Mata LLC,OTC Products,USA,FL,Davie,xavier99@hogan.info,785.479.3737,Active
+S0010,Gutierrez Ltd,Personal Care,USA,FL,Hollywood,pamelaavery@johnson-huber.info,900-216-0777x738,Inactive
+S0011,"Lindsey, Zimmerman and Shelton",OTC Products,USA,FL,Gainesville,simskathleen@murray.com,001-880-532-9218,Active
+S0012,Silva LLC,Medical Device,USA,FL,Orlando,bonillamelissa@rogers-sanders.net,(997)734-5176,Active
+S0013,"Jones, Andrews and Shepherd",Personal Care,USA,FL,Pembroke Pines,cynthiaespinoza@lane.com,(674)596-8253,Active
+S0014,Reid Inc,Supplement,USA,FL,Orlando,mary86@schneider-winters.com,(671)622-0239,Active
+S0015,Moreno Ltd,Medical Device,USA,FL,Pembroke Pines,grahamjoan@larson.org,+1-824-664-9426x367,Inactive
+S0016,"West, Pratt and Smith",Supplement,USA,FL,Coral Springs,danielsmichele@arnold-shaw.com,5722316329,Active
+S0017,"Moore, Cooper and Shepard",Personal Care,USA,FL,Sarasota,debbiebarnett@richardson.biz,789-646-0437,Active
+S0018,"Le, Hanna and Blevins",Pharmaceutical,USA,FL,Naples,vmooney@owens.biz,587-414-1163x32551,Inactive
+S0019,Roach and Sons,Medical Device,USA,FL,Boca Raton,mrivera@rogers-mccoy.net,465.832.6164x62676,Inactive
+S0020,Cobb and Sons,OTC Products,USA,FL,Naples,christian37@horton.com,791.761.5592x72105,Active
+S0021,"Lamb, Flores and Hickman",Supplement,USA,FL,Coral Springs,zmiller@hart-mueller.com,333-954-0735,Active
+S0022,Russell-Donovan,Personal Care,USA,FL,Miami,smithkim@myers.org,001-824-434-7219x8439,Inactive
+S0023,Gibson-Atkins,Personal Care,USA,FL,Orlando,lprice@armstrong.org,576-269-6361x0017,Active
+S0024,Bailey-Martin,Pharmaceutical,USA,FL,Naples,hawkinssarah@jones.com,523.577.9275,Active
+S0025,Ali-Sampson,Supplement,USA,FL,Naples,michael02@oliver.com,6237619881,Inactive
+S0026,"Juarez, Rios and Adams",Personal Care,USA,FL,Tampa,williamwallace@king.com,001-794-808-7540x88991,Active
+S0027,"Price, Brown and Chandler",Pharmaceutical,USA,FL,Jacksonville,thomasgary@bell.com,+1-449-447-1328x6072,Active
+S0028,Hernandez-Brown,Supplement,USA,FL,Coral Springs,jacksonjeffrey@taylor.com,620-442-6315x51596,Active
+S0029,"Taylor, Clark and Ortiz",OTC Products,USA,FL,Miami,hopkinsjames@schaefer-brooks.net,913-532-5894,Active
+S0030,"Jackson, Patterson and Lewis",Supplement,USA,FL,Fort Lauderdale,johnsonjeffrey@hess-smith.net,(919)598-9816x23684,Active
+S0031,"Camacho, Campbell and Wilson",OTC Products,USA,FL,Fort Lauderdale,patricia48@miranda.com,600.419.8080x91206,Active
+S0032,Harmon Inc,Supplement,USA,FL,Gainesville,udavis@le.com,(531)362-5761x0745,Inactive
+S0033,Hines-Hawkins,Personal Care,USA,FL,Fort Lauderdale,vmyers@sullivan.com,578.815.5727,Active
+S0034,Duncan-Morgan,Pharmaceutical,USA,FL,Davie,zacharyhughes@lane-ramirez.org,+1-596-552-6009x93255,Active
+S0035,"Carrillo, Campbell and Ramos",OTC Products,USA,FL,Coral Springs,weaveraustin@sherman-jackson.com,+1-499-913-7744x4374,Active
+S0036,Simmons Ltd,Personal Care,USA,FL,Tampa,elliskatie@ayala.net,675-427-1880x09551,Active
+S0037,"Clark, Lowe and Cabrera",OTC Products,USA,FL,Jacksonville,katiewalters@walker.com,(695)243-4062x0117,Active
+S0038,Owen-Smith,Medical Device,USA,FL,Hollywood,rebecca85@thompson.org,537-701-1256,Inactive
+S0039,Williams PLC,Medical Device,USA,FL,Davie,harrisgregory@mason-myers.com,+1-324-293-3111x14984,Active
+S0040,"Matthews, Downs and Burch",Supplement,USA,FL,West Palm Beach,nicole34@jensen-hoffman.com,371-685-1335,Active
+S0041,Kline-Fisher,Supplement,USA,FL,Davie,hjohnson@king.com,765-320-7852,Active
+S0042,"Daugherty, Green and Choi",Medical Device,USA,FL,West Palm Beach,mary69@montoya-estrada.net,+1-970-246-9524x7282,Active
+S0043,"Hall, Hess and Green",Supplement,USA,FL,West Palm Beach,qbridges@perez-thomas.com,612.453.5381,Active
+S0044,"Bean, Rodriguez and Duran",Medical Device,USA,FL,Sarasota,weissderek@jones.org,(809)326-4104x505,Inactive
+S0045,Morgan-Daniel,Pharmaceutical,USA,FL,Boca Raton,wthompson@davis-andrade.com,950-867-3214x129,Inactive
+S0046,Garcia-Rodriguez,OTC Products,USA,FL,Boca Raton,jared75@baker-henderson.net,306-268-4469,Active
+S0047,Brown PLC,Pharmaceutical,USA,FL,West Palm Beach,charlottewilson@smith.com,001-696-361-8557,Inactive
+S0048,Kelly Inc,Supplement,USA,FL,Tampa,mallorymoyer@randall-hendrix.com,+1-562-674-3007,Active
+S0049,Sims and Sons,Medical Device,USA,FL,Boca Raton,udominguez@hendricks.org,654-728-1802x862,Active
+S0050,Sanchez and Sons,Medical Device,USA,FL,Gainesville,vmccoy@marshall-garza.org,390.734.2034,Active
+S0051,Kelly Ltd,Personal Care,USA,FL,Pembroke Pines,nicholas74@taylor.biz,(469)498-1683,Active
+S0052,"Roy, Williams and Lopez",Personal Care,USA,FL,Orlando,lopezjoy@saunders.com,+1-931-406-7950,Inactive
+S0053,Johnson-Barnes,Supplement,USA,FL,Sarasota,ronnie94@dixon.info,6728793249,Active
+S0054,Montgomery Inc,Supplement,USA,FL,Pembroke Pines,istrong@anderson-foster.com,899-210-2423,Inactive
+S0055,West-Davenport,Personal Care,USA,FL,Tallahassee,egoodman@dawson.net,659.405.2525x2731,Active
+S0056,Horton-Lara,Pharmaceutical,USA,FL,Davie,ericmora@macdonald.info,966-364-9482x213,Inactive
+S0057,"Warren, Hayes and Powers",Medical Device,USA,FL,Davie,christinesmith@martinez.com,001-595-777-5204,Inactive
+S0058,"Harris, Haney and Brown",OTC Products,USA,FL,Coral Springs,daniel10@martin.org,285-328-9830x5801,Active
+S0059,Campbell-Santana,Medical Device,USA,FL,Tampa,cassandrarussell@miller-hayes.com,755-693-8604x90506,Active
+S0060,Bennett and Sons,Pharmaceutical,USA,FL,Hollywood,daviseric@evans.biz,+1-513-422-9778x1661,Active
+S0061,"Martin, Galloway and Jones",Supplement,USA,FL,Hollywood,jreed@green.com,341-835-4912x423,Active
+S0062,"Smith, Allen and Medina",OTC Products,USA,FL,Sarasota,jennifermathews@romero.info,001-648-822-1930x14284,Inactive
+S0063,Miller-Johnson,Medical Device,USA,FL,Gainesville,riveraronald@cook.com,001-955-720-5225x43808,Active
+S0064,Robertson and Sons,Personal Care,USA,FL,Tallahassee,riveradanielle@clark-garrett.com,9837300240,Active
+S0065,"Lynch, Smith and Andrews",OTC Products,USA,FL,Coral Springs,levykelly@martinez-brown.com,804-891-5914x294,Inactive
+S0066,Garcia PLC,Supplement,USA,FL,Miami,mallory78@hanson.com,+1-970-715-6877x1456,Active
+S0067,Powers Group,OTC Products,USA,FL,Tampa,susanmullins@ibarra-turner.org,(726)635-5451x3373,Inactive
+S0068,"Frye, Mccoy and Spence",OTC Products,USA,FL,Fort Lauderdale,villanuevabrandon@donovan.com,659.500.6248x05829,Active
+S0069,Sanchez Group,Medical Device,USA,FL,Tallahassee,anna37@hicks.net,294-983-2967x054,Inactive
+S0070,Cherry PLC,Medical Device,USA,FL,Gainesville,wpatel@taylor.info,(739)743-4107,Active
+S0071,"Cruz, Lam and George",Medical Device,USA,FL,Hollywood,iallen@bailey.net,981.329.4578,Active
+S0072,Chapman-Macdonald,OTC Products,USA,FL,Fort Lauderdale,cassandramccann@chavez-chavez.org,484.957.8909x18218,Active
+S0073,"Baker, Aguirre and Rivera",Personal Care,USA,FL,Coral Springs,shawn77@johnson-herrera.com,540-250-4836x41781,Active
+S0074,Adams-Martinez,OTC Products,USA,FL,Naples,nicolasnorman@simpson.com,+1-599-838-5061,Active
+S0075,"Mitchell, Contreras and Petersen",Pharmaceutical,USA,FL,Boca Raton,sparksmanuel@henderson.com,6109324869,Active
+S0076,Wolfe Ltd,Pharmaceutical,USA,FL,Fort Lauderdale,phillip64@brown.com,001-767-598-1934x857,Active
+S0077,"Hughes, Davis and Marshall",Supplement,USA,FL,Boca Raton,morrispaul@pearson.com,827.518.3708,Active
+S0078,"Medina, Haynes and Carroll",Supplement,USA,FL,Naples,ocolon@wright-anderson.info,(989)554-8235,Active
+S0079,Chavez and Sons,Personal Care,USA,FL,Tampa,ehenderson@stewart.com,(405)263-8517,Active
+S0080,House-Martinez,Personal Care,USA,FL,Tampa,velasquezvanessa@wyatt.biz,001-312-548-7878,Active
+S0081,Wood Inc,Personal Care,USA,FL,Sarasota,dianaewing@davis.org,(277)957-9768x466,Active
+S0082,"Williams, Tanner and Sharp",Pharmaceutical,USA,FL,Davie,arandolph@neal.com,(913)406-0525x1154,Active
+S0083,Ramirez-Austin,Personal Care,USA,FL,Pembroke Pines,nicholas70@mann-lozano.net,001-365-990-9729x5852,Active
+S0084,"Noble, Ramirez and Nguyen",Medical Device,USA,FL,Gainesville,brewerrebecca@ramirez.com,(738)565-1887x3781,Active
+S0085,Turner-Carpenter,Pharmaceutical,USA,FL,Hollywood,ygordon@gray-massey.com,+1-795-711-3520x5538,Active
+S0086,Williams Ltd,Personal Care,USA,FL,Naples,melissa81@black-moore.com,995.455.9218x39347,Active
+S0087,Mckenzie and Sons,Pharmaceutical,USA,FL,Davie,yevans@hall.com,(704)996-5269x657,Active
+S0088,Smith LLC,Supplement,USA,FL,Coral Springs,cantrelljames@flowers.net,+1-398-343-6877x063,Inactive
+S0089,"Davis, Morrison and Horton",OTC Products,USA,FL,Gainesville,vdalton@gardner-hudson.info,308-628-6011x6862,Active
+S0090,Martin-Moon,Medical Device,USA,FL,Naples,brandon20@alexander.info,478.418.6083,Active
+S0091,Kelley-George,Personal Care,USA,FL,Tallahassee,adriana09@adams.biz,+1-426-759-8307x332,Active
+S0092,Spencer-Ross,Medical Device,USA,FL,Davie,judith05@scott.com,+1-283-626-9758,Active
+S0093,"Turner, Rice and Jones",Medical Device,USA,FL,Fort Lauderdale,adam61@hayes.biz,001-455-342-0830x96716,Active
+S0094,Adkins-Price,Pharmaceutical,USA,FL,Pembroke Pines,smithrobert@gardner-lopez.info,(722)505-0248x4778,Active
+S0095,"Hernandez, Acosta and Walker",Supplement,USA,FL,Tampa,jeffreybrown@dalton-heath.com,206-961-7324x9193,Inactive
+S0096,Parker Group,OTC Products,USA,FL,Coral Springs,qpearson@todd.biz,001-269-641-7322x2164,Active
+S0097,"Johnson, Jones and Martinez",Medical Device,USA,FL,Fort Lauderdale,carterkristina@becker.com,+1-971-902-5912x892,Active
+S0098,"Nelson, Hardy and Zuniga",Medical Device,USA,FL,Miami,brittany69@turner.biz,(927)926-5477,Active
+S0099,Peters-Johnson,Supplement,USA,FL,Miami,carterkurt@craig-martin.info,001-869-613-6188x901,Active
+S0100,"Figueroa, Gaines and Henry",Pharmaceutical,USA,FL,West Palm Beach,jmercado@byrd.com,(375)432-9647x7733,Active

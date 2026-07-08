@@ -1,0 +1,21 @@
+product_id,product_name,category,brand,supplier_id,cost_price,unit_price,active_status
+P000001,Ibuprofen 200 mg,OTC Medicine,Hampton Group,S0070,9.52,27.25,Discontinued
+P000002,Acetaminophen 500 mg,OTC Medicine,Fox-Vega,S0076,5.44,56.39,Discontinued
+P000003,Allergy Relief Tablets,OTC Medicine,Bishop PLC,S0041,14.34,10.3,Active
+P000004,Cough Syrup,OTC Medicine,Graves-Olson,S0057,36.97,39.36,Active
+P000005,Antacid Tablets,OTC Medicine,Mccoy-Horn,S0003,28.66,49.07,Active
+P000006,Vitamin C 1000 mg,Vitamin,"Barnes, Walker and Harris",S0098,2.57,9.16,Discontinued
+P000007,Vitamin D3 1000 IU,Vitamin,"Hayes, Johnson and Parsons",S0060,8.02,44.35,Active
+P000008,Multivitamin Gummies,Vitamin,Coffey-Lee,S0048,34.95,52.62,Active
+P000009,Fish Oil Capsules,Vitamin,"Doyle, Torres and Brewer",S0055,9.95,33.09,Active
+P000010,Calcium Tablets,Vitamin,"Bond, Brown and Washington",S0063,17.84,43.23,Active
+P000011,Digital Thermometer,Medical Device,Cantu-Norris,S0011,3.02,19.19,Active
+P000012,Blood Pressure Monitor,Medical Device,"Barker, Stewart and Vasquez",S0094,38.5,42.38,Active
+P000013,Pulse Oximeter,Medical Device,Wright and Sons,S0031,20.79,13.19,Active
+P000014,Glucose Meter,Medical Device,Sullivan and Sons,S0004,30.79,24.75,Discontinued
+P000015,Heating Pad,Medical Device,"Rios, Hayes and Foster",S0053,29.41,49.37,Active
+P000016,Toothpaste,Personal Care,Hubbard Inc,S0009,30.48,49.09,Active
+P000017,Shampoo,Personal Care,"Larsen, Taylor and Lawrence",S0098,6.78,43.77,Discontinued
+P000018,Body Lotion,Personal Care,Bauer PLC,S0063,15.71,32.67,Discontinued
+P000019,Hand Sanitizer,Personal Care,Jenkins-Stark,S0060,16.44,32.28,Active
+P000020,Face Wash,Personal Care,Rowe-Rodriguez,S0100,34.46,58.91,Active

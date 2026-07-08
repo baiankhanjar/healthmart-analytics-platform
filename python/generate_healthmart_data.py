@@ -133,3 +133,218 @@ customer_preferences_df.to_csv(RAW_DIR / "customer_preferences.csv", index=False
 print("customer_preferences.csv created successfully!")
 print(customer_preferences_df.head())
 
+# Generate suppliers
+suppliers = []
+
+supplier_types = [
+    "Pharmaceutical",
+    "Medical Device",
+    "Supplement",
+    "Personal Care",
+    "OTC Products"
+]
+
+for i in range(1, 101):
+    suppliers.append({
+        "supplier_id": f"S{i:04}",
+        "supplier_name": fake.company(),
+        "supplier_type": random.choice(supplier_types),
+        "country": "USA",
+        "state": "FL",
+        "city": random.choice(FLORIDA_CITIES),
+        "contact_email": fake.company_email(),
+        "phone": fake.phone_number(),
+        "active_status": random.choice(["Active", "Active", "Active", "Inactive"])
+    })
+
+suppliers_df = pd.DataFrame(suppliers)
+
+suppliers_df.to_csv(RAW_DIR / "suppliers.csv", index=False)
+
+print("suppliers.csv created successfully!")
+print(suppliers_df.head())
+
+# Generate products
+products = []
+
+categories = {
+    "OTC Medicine": [
+        "Ibuprofen 200 mg",
+        "Acetaminophen 500 mg",
+        "Allergy Relief Tablets",
+        "Cough Syrup",
+        "Antacid Tablets"
+    ],
+    "Vitamin": [
+        "Vitamin C 1000 mg",
+        "Vitamin D3 1000 IU",
+        "Multivitamin Gummies",
+        "Fish Oil Capsules",
+        "Calcium Tablets"
+    ],
+    "Medical Device": [
+        "Digital Thermometer",
+        "Blood Pressure Monitor",
+        "Pulse Oximeter",
+        "Glucose Meter",
+        "Heating Pad"
+    ],
+    "Personal Care": [
+        "Toothpaste",
+        "Shampoo",
+        "Body Lotion",
+        "Hand Sanitizer",
+        "Face Wash"
+    ]
+}
+
+product_counter = 1
+
+for category, product_list in categories.items():
+    for product in product_list:
+        products.append({
+            "product_id": f"P{product_counter:06}",
+            "product_name": product,
+            "category": category,
+            "brand": fake.company(),
+            "supplier_id": random.choice(suppliers_df["supplier_id"]),
+            "cost_price": round(random.uniform(2, 40), 2),
+            "unit_price": round(random.uniform(5, 60), 2),
+            "active_status": random.choice(["Active", "Active", "Active", "Discontinued"])
+        })
+
+        product_counter += 1
+
+products_df = pd.DataFrame(products)
+
+products_df.to_csv(RAW_DIR / "products.csv", index=False)
+
+print("products.csv created successfully!")
+print(products_df.head())
+
+
+
+# Generate stores
+stores = []
+
+regions = {
+    "South Florida": ["Miami", "Fort Lauderdale", "Pembroke Pines", "Hollywood", "Davie", "Boca Raton"],
+    "Central Florida": ["Orlando", "Tampa", "Sarasota"],
+    "North Florida": ["Jacksonville", "Gainesville", "Tallahassee"],
+    "West Florida": ["Naples"]
+}
+
+store_counter = 1
+
+for region, city_list in regions.items():
+    for city in city_list:
+        for _ in range(random.randint(15, 35)):
+            stores.append({
+                "store_id": f"ST{store_counter:04}",
+                "store_name": f"HealthMart {city} #{store_counter}",
+                "city": city,
+                "state": "FL",
+                "region": region,
+                "store_type": random.choice(["Retail", "Retail", "Retail", "Pharmacy Plus"]),
+                "open_date": fake.date_between(start_date="-15y", end_date="-1y"),
+                "active_status": random.choice(["Active", "Active", "Active", "Inactive"])
+            })
+
+            store_counter += 1
+
+stores_df = pd.DataFrame(stores)
+
+stores_df.to_csv(RAW_DIR / "stores.csv", index=False)
+
+print("stores.csv created successfully!")
+print(stores_df.head())
+print(f"Total stores generated: {len(stores_df)}")
+
+
+
+
+# Generate inventory
+inventory = []
+
+inventory_counter = 1
+
+for store in stores_df.itertuples():
+    store_products = products_df.sample(frac=0.75, random_state=random.randint(1, 100000))
+
+    for product in store_products.itertuples():
+        inventory.append({
+            "inventory_id": f"INV{inventory_counter:07}",
+            "store_id": store.store_id,
+            "product_id": product.product_id,
+            "quantity_on_hand": random.randint(0, 500),
+            "reorder_level": random.randint(20, 100),
+            "last_updated_date": fake.date_between(start_date="-30d", end_date="today")
+        })
+
+        inventory_counter += 1
+
+inventory_df = pd.DataFrame(inventory)
+
+inventory_df.to_csv(RAW_DIR / "inventory.csv", index=False)
+
+print("inventory.csv created successfully!")
+print(inventory_df.head())
+print(f"Total inventory rows generated: {len(inventory_df)}")
+
+# Generate transactions
+transactions = []
+
+payment_methods = ["Credit Card", "Debit Card", "Cash", "Mobile Payment"]
+
+for i in range(1, 5001):
+    transactions.append({
+        "transaction_id": f"T{i:07}",
+        "customer_id": random.choice(customers_df["customer_id"]),
+        "store_id": random.choice(stores_df["store_id"]),
+        "transaction_date": fake.date_between(start_date="-2y", end_date="today"),
+        "payment_method": random.choice(payment_methods),
+        "transaction_total": round(random.uniform(5, 250), 2)
+    })
+
+transactions_df = pd.DataFrame(transactions)
+
+transactions_df.to_csv(RAW_DIR / "transactions.csv", index=False)
+
+print("transactions.csv created successfully!")
+print(transactions_df.head())
+print(f"Total transactions generated: {len(transactions_df)}")
+
+
+
+# Generate transaction items
+transaction_items = []
+
+transaction_item_counter = 1
+
+for transaction in transactions_df.itertuples():
+    number_of_items = random.randint(1, 5)
+    selected_products = products_df.sample(n=number_of_items)
+
+    for product in selected_products.itertuples():
+        quantity = random.randint(1, 4)
+        unit_price = product.unit_price
+        line_total = round(quantity * unit_price, 2)
+
+        transaction_items.append({
+            "transaction_item_id": f"TI{transaction_item_counter:08}",
+            "transaction_id": transaction.transaction_id,
+            "product_id": product.product_id,
+            "quantity": quantity,
+            "unit_price": unit_price,
+            "line_total": line_total
+        })
+
+        transaction_item_counter += 1
+
+transaction_items_df = pd.DataFrame(transaction_items)
+
+transaction_items_df.to_csv(RAW_DIR / "transaction_items.csv", index=False)
+
+print("transaction_items.csv created successfully!")
+print(transaction_items_df.head())
+print(f"Total transaction items generated: {len(transaction_items_df)}")
