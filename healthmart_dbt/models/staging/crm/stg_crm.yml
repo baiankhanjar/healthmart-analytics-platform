@@ -1,0 +1,63 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Cleaned staging model for HealthMart customer records.
+    columns:
+      - name: customer_id
+        description: Unique customer identifier from the CRM system.
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_loyalty_accounts
+    description: Cleaned staging model for customer loyalty account records.
+    columns:
+      - name: loyalty_id
+        description: Unique loyalty account identifier.
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Customer identifier linked to stg_customers.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+  - name: stg_customer_addresses
+    description: Cleaned staging model for customer address records.
+    columns:
+      - name: address_id
+        description: Unique address identifier.
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Customer identifier linked to stg_customers.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+  - name: stg_customer_preferences
+    description: Cleaned staging model for customer communication preferences.
+    columns:
+      - name: preference_id
+        description: Unique customer preference record identifier.
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Customer identifier linked to stg_customers.
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id

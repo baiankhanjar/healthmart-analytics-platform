@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: healthmart_raw
+    database: healthmart-analytics
+    schema: healthmart_raw
+
+    tables:
+      - name: customers
+      - name: loyalty_accounts
+      - name: customer_addresses
+      - name: customer_preferences
+
+      - name: suppliers
+      - name: products
+      - name: stores
+      - name: inventory
+
+      - name: transactions
+      - name: transaction_items
