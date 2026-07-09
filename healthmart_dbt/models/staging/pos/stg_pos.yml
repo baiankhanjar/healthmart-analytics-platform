@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: Cleaned staging model for POS transaction header records.
+    columns:
+      - name: transaction_id
+        description: Unique transaction / receipt identifier.
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Customer identifier linked to stg_customers.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+      - name: store_id
+        description: Store identifier linked to stg_stores.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_stores')
+              field: store_id
+
+  - name: stg_transaction_items
+    description: Cleaned staging model for POS transaction line-item records.
+    columns:
+      - name: transaction_item_id
+        description: Unique transaction line item identifier.
+        tests:
+          - not_null
+          - unique
+
+      - name: transaction_id
+        description: Transaction identifier linked to stg_transactions.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_transactions')
+              field: transaction_id
+
+      - name: product_id
+        description: Product identifier linked to stg_products.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id

@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: stg_suppliers
+    description: Cleaned staging model for supplier records from the ERP system.
+    columns:
+      - name: supplier_id
+        description: Unique supplier identifier.
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_products
+    description: Cleaned staging model for product records from the ERP system.
+    columns:
+      - name: product_id
+        description: Unique product identifier.
+        tests:
+          - not_null
+          - unique
+
+      - name: supplier_id
+        description: Supplier identifier linked to stg_suppliers.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_suppliers')
+              field: supplier_id
+
+  - name: stg_inventory
+    description: Cleaned staging model for store-level product inventory.
+    columns:
+      - name: inventory_id
+        description: Unique inventory record identifier.
+        tests:
+          - not_null
+          - unique
+
+      - name: store_id
+        description: Store identifier linked to stg_stores.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_stores')
+              field: store_id
+
+      - name: product_id
+        description: Product identifier linked to stg_products.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
