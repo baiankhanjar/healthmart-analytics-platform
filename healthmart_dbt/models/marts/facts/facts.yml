@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: Fact table containing one row per transaction item.
+
+    columns:
+      - name: sales_key
+        description: Surrogate key for the sales fact table.
+        data_tests:
+          - not_null
+          - unique
+
+      - name: transaction_item_id
+        description: Original transaction item identifier.
+        data_tests:
+          - not_null
+          - unique
+
+      - name: date_key
+        description: Foreign key linked to dim_date.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+
+      - name: customer_key
+        description: Foreign key linked to dim_customers.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_key
+
+      - name: product_key
+        description: Foreign key linked to dim_products.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_key
+
+      - name: store_key
+        description: Foreign key linked to dim_stores.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_stores')
+                field: store_key

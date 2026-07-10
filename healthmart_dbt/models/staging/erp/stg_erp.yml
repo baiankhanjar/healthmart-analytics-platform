@@ -27,6 +27,17 @@ models:
               to: ref('stg_suppliers')
               field: supplier_id
 
+
+  - name: stg_stores
+    description: Cleaned staging model for HealthMart store records.
+    columns:
+      - name: store_id
+        description: Unique store identifier.
+        tests:
+          - not_null
+          - unique
+
+
   - name: stg_inventory
     description: Cleaned staging model for store-level product inventory.
     columns:

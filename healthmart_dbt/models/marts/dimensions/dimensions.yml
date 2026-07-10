@@ -1,0 +1,63 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Product dimension table for HealthMart analytics.
+    columns:
+      - name: product_key
+        description: Surrogate key for the product dimension.
+        tests:
+          - not_null
+          - unique
+
+      - name: product_id
+        description: Original product identifier from the ERP system.
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_stores
+    description: Store dimension table for HealthMart analytics.
+    columns:
+      - name: store_key
+        description: Surrogate key for the store dimension.
+        tests:
+          - not_null
+          - unique
+
+      - name: store_id
+        description: Original store identifier from the ERP system.
+        tests:
+          - not_null
+          - unique
+
+
+  - name: dim_customers
+    description: Customer dimension table for HealthMart analytics.
+    columns:
+      - name: customer_key
+        description: Surrogate key for the customer dimension.
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Original customer identifier from the CRM system.
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_date
+    description: Calendar dimension used for date-based reporting and analysis.
+    columns:
+      - name: date_key
+        description: Integer warehouse key in YYYYMMDD format.
+        tests:
+          - not_null
+          - unique
+
+      - name: full_date
+        description: Actual calendar date used to connect transactions to the date dimension.
+        tests:
+          - not_null
+          - unique
