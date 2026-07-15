@@ -2,62 +2,201 @@ version: 2
 
 models:
   - name: dim_products
-    description: Product dimension table for HealthMart analytics.
+    description: >
+      Product dimension used in the HealthMart star schema.
+      The grain is one row per product.
+
+      This dimension contains descriptive product attributes and generates
+      a surrogate key that is referenced by the sales fact table.
     columns:
       - name: product_key
-        description: Surrogate key for the product dimension.
-        tests:
+        description: >
+          Surrogate key generated from product_id.
+          Serves as the primary key of the product dimension and is referenced
+          by fct_sales.
+        data_tests:
           - not_null
           - unique
 
       - name: product_id
-        description: Original product identifier from the ERP system.
-        tests:
+        description: Original product business identifier assigned by the ERP system.
+        data_tests:
           - not_null
           - unique
 
+      - name: product_name
+        description: Business name of the product sold by HealthMart.
+
+      - name: category
+        description: Product category used for reporting and analysis.
+
+      - name: brand
+        description: Brand or manufacturer associated with the product.
+
+      - name: supplier_id
+        description: Original supplier identifier associated with the product.
+
+      - name: cost_price
+        description: Cost paid by HealthMart to purchase one unit of the product.
+
+      - name: unit_price
+        description: Standard selling price charged to customers for one unit of the product.
+
+      - name: active_status
+        description: Indicates whether the product is currently active and available for sale.
+
+
+
   - name: dim_stores
-    description: Store dimension table for HealthMart analytics.
+    description: >
+      Store dimension used in the HealthMart star schema.
+      The grain is one row per store.
+
+      This dimension contains descriptive store attributes and generates
+      a surrogate key that is referenced by the sales fact table.
+
     columns:
       - name: store_key
-        description: Surrogate key for the store dimension.
-        tests:
+        description: >
+          Surrogate key generated from store_id.
+          Serves as the primary key of the store dimension and is referenced
+          by fct_sales.
+        data_tests:
           - not_null
           - unique
 
       - name: store_id
-        description: Original store identifier from the ERP system.
-        tests:
+        description: Original store business identifier assigned by the ERP system.
+        data_tests:
           - not_null
           - unique
 
+      - name: store_name
+        description: Business name of the HealthMart store.
+
+      - name: city
+        description: City where the store is located.
+
+      - name: state
+        description: State where the store is located.
+
+      - name: region
+        description: Geographic region used for business reporting and operational analysis.
+
+      - name: store_type
+        description: Classification of the store, such as Retail, Pharmacy, or Express.
+
+      - name: open_date
+        description: Date when the store first opened for business.
+
+      - name: active_status
+        description: Indicates whether the store is currently active or inactive.
+
+
+
+
 
   - name: dim_customers
-    description: Customer dimension table for HealthMart analytics.
+    description: >
+      Customer dimension used in the HealthMart star schema.
+      The grain is one row per customer.
+
+      This dimension generates a surrogate key that is used by
+      fact tables to join customer information consistently across
+      the data warehouse.
+
     columns:
       - name: customer_key
-        description: Surrogate key for the customer dimension.
-        tests:
+        description: >
+          Surrogate key generated from customer_id.
+          Serves as the primary key of the customer dimension and
+          is referenced by fact tables in the star schema.
+        data_tests:
           - not_null
           - unique
 
       - name: customer_id
-        description: Original customer identifier from the CRM system.
-        tests:
+        description: Original business identifier assigned by the CRM system.
+        data_tests:
           - not_null
           - unique
 
+      - name: first_name
+        description: Customer's first name.
+
+      - name: last_name
+        description: Customer's last name.
+
+      - name: email
+        description: Customer's email address.
+
+      - name: phone
+        description: Customer's primary phone number.
+
+      - name: gender
+        description: Customer's recorded gender.
+
+      - name: birth_date
+        description: Customer's date of birth.
+
+      - name: signup_date
+        description: Date when the customer registered with HealthMart.
+
+
+
   - name: dim_date
-    description: Calendar dimension used for date-based reporting and analysis.
+    description: >
+      Calendar dimension used in the HealthMart star schema.
+      The grain is one row per calendar date.
+
+      This dimension provides reusable date attributes for reporting,
+      including year, quarter, month, week, day name, and weekend status.
+      It is generated directly in BigQuery rather than sourced from an
+      operational system.
+
     columns:
       - name: date_key
-        description: Integer warehouse key in YYYYMMDD format.
-        tests:
+        description: >
+          Integer warehouse key in YYYYMMDD format.
+          Serves as the primary key of the date dimension and is referenced
+          by fct_sales.
+        data_tests:
           - not_null
           - unique
 
       - name: full_date
-        description: Actual calendar date used to connect transactions to the date dimension.
-        tests:
+        description: >
+          Actual calendar date used to match transaction_date when building
+          fct_sales.
+        data_tests:
           - not_null
           - unique
+
+      - name: year
+        description: Four-digit calendar year.
+
+      - name: quarter
+        description: Calendar quarter number from 1 through 4.
+
+      - name: month_number
+        description: Calendar month number from 1 through 12.
+
+      - name: month_name
+        description: Full calendar month name, such as January or July.
+
+      - name: week_number
+        description: Calendar week number within the year.
+
+      - name: day_of_month
+        description: Day number within the month.
+
+      - name: day_name
+        description: Full name of the day of the week, such as Monday or Friday.
+
+      - name: day_of_week_number
+        description: >
+          Numeric day-of-week value returned by BigQuery, where Sunday is 1
+          and Saturday is 7.
+
+      - name: is_weekend
+        description: Indicates whether the calendar date falls on Saturday or Sunday.  

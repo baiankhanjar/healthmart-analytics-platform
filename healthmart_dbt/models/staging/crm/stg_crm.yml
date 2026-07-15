@@ -2,61 +2,129 @@ version: 2
 
 models:
   - name: stg_customers
-    description: Cleaned staging model for HealthMart customer records.
+    description: >
+      Cleaned staging model for customer master records from the CRM system.
+      The grain is one row per customer.
+
     columns:
       - name: customer_id
-        description: Unique customer identifier from the CRM system.
+        description: Unique business identifier assigned to the customer by the CRM system.
         data_tests:
           - not_null
           - unique
+
+      - name: first_name
+        description: Customer's first name.
+
+      - name: last_name
+        description: Customer's last name.
+
+      - name: email
+        description: Customer's email address.
+
+      - name: phone
+        description: Customer's primary phone number.
+
+      - name: gender
+        description: Customer's recorded gender.
+
+      - name: birth_date
+        description: Customer's date of birth.
+
+      - name: signup_date
+        description: Date when the customer registered with HealthMart.
+
 
   - name: stg_loyalty_accounts
-    description: Cleaned staging model for customer loyalty account records.
+    description: >
+      Cleaned staging model for customer loyalty account records.
+      The grain is one row per loyalty account.
     columns:
       - name: loyalty_id
-        description: Unique loyalty account identifier.
+        description: Unique business identifier assigned to each loyalty account.
         data_tests:
           - not_null
           - unique
 
       - name: customer_id
-        description: Customer identifier linked to stg_customers.
+        description: >
+          Customer business identifier linked to stg_customers.
+          Every loyalty account must belong to an existing customer.
         data_tests:
           - not_null
           - relationships:
               arguments:
                 to: ref('stg_customers')
                 field: customer_id
+
+      - name: loyalty_tier
+        description: Customer's current loyalty membership tier.
+
+      - name: points_balance
+        description: Current number of loyalty points available in the account.
+
+      - name: enrollment_date
+        description: Date when the customer enrolled in the loyalty program.
+
+      - name: account_status
+        description: Current status of the loyalty account, such as active or inactive.
+
 
   - name: stg_customer_addresses
-    description: Cleaned staging model for customer address records.
+    description: >
+      Cleaned staging model for customer address records.
+      The grain is one row per customer address.
+      A customer may have multiple address records.
     columns:
       - name: address_id
-        description: Unique address identifier.
+        description: Unique business identifier assigned to each customer address.
         data_tests:
           - not_null
           - unique
 
       - name: customer_id
-        description: Customer identifier linked to stg_customers.
+        description: >
+          Customer business identifier linked to stg_customers.
+          Every address record must belong to an existing customer.
         data_tests:
           - not_null
           - relationships:
               arguments:
                 to: ref('stg_customers')
                 field: customer_id
+
+      - name: address_type
+        description: Type of address, such as Home, Billing, or Shipping.
+
+      - name: street_address
+        description: Street portion of the customer's address.
+
+      - name: city
+        description: City associated with the customer's address.
+
+      - name: state
+        description: State associated with the customer's address.
+
+      - name: zip_code
+        description: ZIP or postal code associated with the customer's address.
+
 
   - name: stg_customer_preferences
-    description: Cleaned staging model for customer communication preferences.
+    description: >
+      Cleaned staging model for customer communication preference records.
+      The grain is one row per customer preference record.
+      The current business rule allows one preference record per customer.
     columns:
       - name: preference_id
-        description: Unique customer preference record identifier.
+        description: Unique business identifier assigned to each customer preference record.
         data_tests:
           - not_null
           - unique
 
       - name: customer_id
-        description: Customer identifier linked to stg_customers.
+        description: >
+          Customer business identifier linked to stg_customers.
+          Each customer can have only one preference record.
         data_tests:
           - not_null
           - unique
@@ -64,3 +132,18 @@ models:
               arguments:
                 to: ref('stg_customers')
                 field: customer_id
+                
+      - name: email_opt_in
+        description: Indicates whether the customer has opted in to receive email communications.
+
+      - name: sms_opt_in
+        description: Indicates whether the customer has opted in to receive SMS communications.
+
+      - name: preferred_language
+        description: Customer's preferred language for communications.
+
+      - name: preferred_channel
+        description: Customer's preferred communication channel, such as Email or SMS.
+
+      - name: last_updated_date
+        description: Date when the customer's communication preferences were last updated.

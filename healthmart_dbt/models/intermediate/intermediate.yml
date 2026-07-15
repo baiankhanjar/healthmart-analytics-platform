@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: int_transaction_items_enriched
+    description: >
+      Intermediate model that combines transaction header data,
+      transaction line items, and product attributes into a single
+      business-ready dataset.
+
+      The grain is one row per transaction item.
+
+      This model centralizes business joins and gross profit
+      calculations before building the sales fact table,
+      keeping fct_sales simple and easier to maintain.
+
+    columns:
+      - name: transaction_item_id
+        description: Unique business identifier for the transaction line item.
+        data_tests:
+          - not_null
+          - unique
+
+      - name: transaction_id
+        description: Identifier of the transaction or receipt containing the line item.
+        data_tests:
+          - not_null
+
+      - name: customer_id
+        description: Customer business identifier retrieved from stg_transactions.
+        data_tests:
+          - not_null
+
+      - name: store_id
+        description: Store business identifier retrieved from stg_transactions.
+        data_tests:
+          - not_null
+
+      - name: transaction_date
+        description: Date when the transaction occurred.
+        data_tests:
+          - not_null
+
+      - name: product_id
+        description: Product business identifier associated with the transaction line item.
+        data_tests:
+          - not_null
+
+      - name: product_name
+        description: Business name of the product retrieved from stg_products.
+
+      - name: category
+        description: Product category used for reporting and analysis.
+
+      - name: brand
+        description: Brand associated with the product.
+
+      - name: quantity
+        description: Number of units purchased for the transaction line item.
+
+      - name: unit_price
+        description: Selling price per unit recorded at the time of the transaction.
+
+      - name: cost_price
+        description: Cost paid by HealthMart for one unit of the product.
+
+      - name: line_total
+        description: Total sales amount for the transaction line item.
+
+      - name: gross_profit
+        description: >
+          Gross profit for the transaction line item, calculated as line_total
+          minus quantity multiplied by cost_price.

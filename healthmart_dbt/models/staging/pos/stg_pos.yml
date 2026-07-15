@@ -2,16 +2,20 @@ version: 2
 
 models:
   - name: stg_transactions
-    description: Cleaned staging model for POS transaction header records.
+    description: >
+      Cleaned staging model for POS transaction header records.
+      The grain is one row per transaction (receipt).
     columns:
       - name: transaction_id
-        description: Unique transaction or receipt identifier.
+        description: Unique business identifier assigned to each sales transaction.
         data_tests:
           - not_null
           - unique
 
       - name: customer_id
-        description: Customer identifier linked to stg_customers.
+        description: >
+          Customer business identifier linked to stg_customers.
+          Every transaction must belong to an existing customer.
         data_tests:
           - not_null
           - relationships:
@@ -20,7 +24,9 @@ models:
                 field: customer_id
 
       - name: store_id
-        description: Store identifier linked to stg_stores.
+        description: >
+          Store business identifier linked to stg_stores.
+          Every transaction must occur at an existing store.
         data_tests:
           - not_null
           - relationships:
@@ -28,17 +34,32 @@ models:
                 to: ref('stg_stores')
                 field: store_id
 
+      - name: transaction_date
+        description: Date when the sales transaction occurred.
+
+      - name: payment_method
+        description: Payment method used by the customer, such as Cash, Credit Card, or Debit Card.
+
+      - name: transaction_total
+        description: Total monetary amount of the transaction before it is broken down into individual line items.
+
+
   - name: stg_transaction_items
-    description: Cleaned staging model for POS transaction line-item records.
+    description: >
+      Cleaned staging model for POS transaction line-item records.
+      The grain is one row per product purchased within a transaction.
+
     columns:
       - name: transaction_item_id
-        description: Unique transaction line-item identifier.
+        description: Unique business identifier assigned to each transaction line item.
         data_tests:
           - not_null
           - unique
 
       - name: transaction_id
-        description: Transaction identifier linked to stg_transactions.
+        description: >
+          Transaction business identifier linked to stg_transactions.
+          Every line item must belong to an existing transaction.
         data_tests:
           - not_null
           - relationships:
@@ -47,10 +68,22 @@ models:
                 field: transaction_id
 
       - name: product_id
-        description: Product identifier linked to stg_products.
+        description: >
+          Product business identifier linked to stg_products.
+          Every line item must reference an existing product.
+
         data_tests:
           - not_null
           - relationships:
               arguments:
                 to: ref('stg_products')
                 field: product_id
+     
+      - name: quantity
+        description: Number of units of the product purchased in the transaction.
+
+      - name: unit_price
+        description: Selling price of a single unit of the product at the time of purchase.
+
+      - name: line_total
+        description: Total sales amount for the transaction line item, calculated as quantity multiplied by unit price.

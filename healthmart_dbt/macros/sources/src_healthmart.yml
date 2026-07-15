@@ -2,19 +2,61 @@ version: 2
 
 sources:
   - name: healthmart_raw
+    description: >
+      Raw operational data for the HealthMart analytics platform.
+      These tables are loaded into BigQuery from generated CSV source files
+      and are used as the starting point for all dbt staging models.
+
     database: healthmart-analytics
     schema: healthmart_raw
 
     tables:
       - name: customers
+        description: >
+          Customer master records from the CRM system.
+          One row represents one customer.
+
       - name: loyalty_accounts
+        description: >
+          Customer loyalty account records.
+          Each row represents one loyalty account linked to a customer.
+
       - name: customer_addresses
+        description: >
+          Customer address records.
+          One customer may have multiple address records.
+
       - name: customer_preferences
+        description: >
+          Customer communication and marketing preferences,
+          including email, SMS, language, and preferred contact channel.
 
       - name: suppliers
+        description: >
+          Supplier master records used by the ERP system.
+          One row represents one supplier.
+
       - name: products
+        description: >
+          Product master records, including product category, brand,
+          supplier, cost price, selling price, and active status.
+
       - name: stores
+        description: >
+          HealthMart store master records.
+          One row represents one physical store location.
+
       - name: inventory
+        description: >
+          Store-level inventory records.
+          One row represents the inventory position for one product in one store.
 
       - name: transactions
+        description: >
+          POS transaction header records.
+          One row represents one customer purchase or receipt.
+
       - name: transaction_items
+        description: >
+          POS transaction line-item records.
+          One row represents one product purchased within one transaction.

@@ -2,63 +2,154 @@ version: 2
 
 models:
   - name: stg_suppliers
-    description: Cleaned staging model for supplier records from the ERP system.
+    description: >
+      Cleaned staging model for supplier master records from the ERP system.
+      The grain is one row per supplier.
     columns:
       - name: supplier_id
-        description: Unique supplier identifier.
-        tests:
+        description: Unique business identifier assigned to each supplier.
+        data_tests:
           - not_null
           - unique
+
+      - name: supplier_name
+        description: Legal or operating name of the supplier.
+
+      - name: supplier_type
+        description: Category of goods or services provided by the supplier.
+
+      - name: country
+        description: Country where the supplier is located.
+
+      - name: state
+        description: State where the supplier is located.
+
+      - name: city
+        description: City where the supplier is located.
+
+      - name: contact_email
+        description: Primary email address used to contact the supplier.
+
+      - name: phone
+        description: Primary phone number used to contact the supplier.
+
+      - name: active_status
+        description: Indicates whether the supplier is currently active or inactive.
+
 
   - name: stg_products
-    description: Cleaned staging model for product records from the ERP system.
+    description: >
+      Cleaned staging model for product master records from the ERP system.
+      The grain is one row per product.
+
     columns:
       - name: product_id
-        description: Unique product identifier.
-        tests:
+        description: Unique business identifier assigned to each product.
+        data_tests:
           - not_null
           - unique
 
+      - name: product_name
+        description: Business name of the product sold by HealthMart.
+
+      - name: category
+        description: Product category used for reporting and analysis.
+
+      - name: brand
+        description: Brand or manufacturer associated with the product.
+
       - name: supplier_id
-        description: Supplier identifier linked to stg_suppliers.
-        tests:
+        description: >
+          Supplier business identifier linked to stg_suppliers.
+          Every product must be supplied by an existing supplier.
+        data_tests:
           - not_null
           - relationships:
-              to: ref('stg_suppliers')
-              field: supplier_id
+              arguments:
+                to: ref('stg_suppliers')
+                field: supplier_id
+
+      - name: cost_price
+        description: Cost paid by HealthMart to purchase one unit of the product.
+
+      - name: unit_price
+        description: Standard selling price charged to customers for one unit of the product.
+
+      - name: active_status
+        description: Indicates whether the product is currently active and available for sale.
 
 
   - name: stg_stores
-    description: Cleaned staging model for HealthMart store records.
+    description: >
+      Cleaned staging model for HealthMart store master records.
+      The grain is one row per store.
     columns:
       - name: store_id
-        description: Unique store identifier.
-        tests:
+        description: Unique business identifier assigned to each HealthMart store.
+        data_tests:
           - not_null
           - unique
+
+      - name: store_name
+        description: Business name of the HealthMart store.
+
+      - name: city
+        description: City where the store is located.
+
+      - name: state
+        description: State where the store is located.
+
+      - name: region
+        description: Geographic region used for business reporting and operational analysis.
+
+      - name: store_type
+        description: Classification of the store, such as Retail, Pharmacy, or Express.
+
+      - name: open_date
+        description: Date when the store first opened for business.
+
+      - name: active_status
+        description: Indicates whether the store is currently active or inactive.
 
 
   - name: stg_inventory
-    description: Cleaned staging model for store-level product inventory.
+    description: >
+      Cleaned staging model for store-level inventory records.
+      The grain is one row per product inventory record for one store.
     columns:
       - name: inventory_id
-        description: Unique inventory record identifier.
-        tests:
+        description: Unique business identifier assigned to each inventory record.
+        data_tests:
           - not_null
           - unique
 
       - name: store_id
-        description: Store identifier linked to stg_stores.
-        tests:
+        description: >
+          Store business identifier linked to stg_stores.
+          Every inventory record must belong to an existing store.
+        data_tests:
           - not_null
           - relationships:
-              to: ref('stg_stores')
-              field: store_id
+              arguments:
+                to: ref('stg_stores')
+                field: store_id
 
       - name: product_id
-        description: Product identifier linked to stg_products.
-        tests:
+        description: >
+          Product business identifier linked to stg_products.
+          Every inventory record must belong to an existing product.
+        data_tests:
           - not_null
           - relationships:
-              to: ref('stg_products')
-              field: product_id
+              arguments:
+                to: ref('stg_products')
+                field: product_id
+                
+      - name: quantity_on_hand
+        description: Current quantity of the product available in the store.
+
+      - name: reorder_level
+        description: Inventory threshold that indicates when additional stock should be reordered.
+
+      - name: last_updated_date
+        description: Date when the inventory record was last updated.

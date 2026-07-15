@@ -2,23 +2,41 @@ version: 2
 
 models:
   - name: fct_sales
-    description: Fact table containing one row per transaction item.
+    description: >
+      Sales fact table used in the HealthMart star schema.
+      The grain is one row per transaction item, meaning one product line
+      on one sales transaction.
+
+      This model connects each sales event to the date, customer, store,
+      and product dimensions and stores the numeric measures needed for
+      sales and profitability analysis.
 
     columns:
       - name: sales_key
-        description: Surrogate key for the sales fact table.
+        description: >
+          Surrogate key generated from transaction_item_id.
+          Serves as the primary key of the sales fact table.
         data_tests:
           - not_null
           - unique
 
       - name: transaction_item_id
-        description: Original transaction item identifier.
+        description: >
+          Original business identifier for the transaction line item.
+          This identifies the specific product line on the receipt.
         data_tests:
           - not_null
           - unique
 
+      - name: transaction_id
+        description: >
+          Original transaction or receipt identifier.
+          Multiple transaction item rows may share the same transaction_id.
+
       - name: date_key
-        description: Foreign key linked to dim_date.
+        description: >
+          Foreign key linked to dim_date.
+          Identifies when the sales transaction occurred.
         data_tests:
           - not_null
           - relationships:
@@ -27,7 +45,9 @@ models:
                 field: date_key
 
       - name: customer_key
-        description: Foreign key linked to dim_customers.
+        description: >
+          Foreign key linked to dim_customers.
+          Identifies the customer associated with the sales transaction.
         data_tests:
           - not_null
           - relationships:
@@ -36,7 +56,9 @@ models:
                 field: customer_key
 
       - name: product_key
-        description: Foreign key linked to dim_products.
+        description: >
+          Foreign key linked to dim_products.
+          Identifies the product purchased in the transaction line item.
         data_tests:
           - not_null
           - relationships:
@@ -45,7 +67,9 @@ models:
                 field: product_key
 
       - name: store_key
-        description: Foreign key linked to dim_stores.
+        description: >
+          Foreign key linked to dim_stores.
+          Identifies the store where the sales transaction occurred.
         data_tests:
           - not_null
           - relationships:
