@@ -74,6 +74,8 @@ models:
 
       - name: unit_price
         description: Standard selling price charged to customers for one unit of the product.
+        data_tests:
+          - positive_price
 
       - name: active_status
         description: Indicates whether the product is currently active and available for sale.

@@ -76,3 +76,23 @@ models:
               arguments:
                 to: ref('dim_stores')
                 field: store_key
+      - name: quantity
+        description: Number of units purchased for the transaction line item.
+
+      - name: unit_price
+        description: Selling price per unit recorded at the time of the transaction.
+
+      - name: sales_amount
+        description: >
+          Total revenue for the transaction line item.
+          This value comes from line_total in the intermediate model.
+
+      - name: cost_amount
+        description: >
+          Total product cost for the transaction line item, calculated as
+          quantity multiplied by cost_price.
+
+      - name: gross_profit
+        description: >
+          Gross profit for the transaction line item, calculated as
+          sales_amount minus cost_amount. 

@@ -21,6 +21,8 @@ models:
 
       - name: email
         description: Customer's email address.
+        data_tests:
+         - valid_email
 
       - name: phone
         description: Customer's primary phone number.
@@ -59,7 +61,15 @@ models:
 
       - name: loyalty_tier
         description: Customer's current loyalty membership tier.
-
+        data_tests:
+          - accepted_list_values:
+              arguments:
+                allowed_values:
+                  - Bronze
+                  - Silver
+                  - Gold
+                  - Platinum
+                  
       - name: points_balance
         description: Current number of loyalty points available in the account.
 

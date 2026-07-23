@@ -1,3 +1,5 @@
+
+
 select
     {{ dbt_utils.generate_surrogate_key(['sales.transaction_item_id']) }} as sales_key,
 
@@ -16,6 +18,8 @@ select
     sales.gross_profit
 
 from {{ ref('int_transaction_items_enriched') }} as sales
+
+
 
 left join {{ ref('dim_date') }} as dates
     on sales.transaction_date = dates.full_date

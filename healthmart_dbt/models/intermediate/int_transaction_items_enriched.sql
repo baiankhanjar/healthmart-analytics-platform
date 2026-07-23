@@ -16,5 +16,5 @@ select
 from {{ ref('stg_transaction_items') }} ti
 left join {{ ref('stg_transactions') }} t
     on ti.transaction_id = t.transaction_id
-left join {{ ref('stg_products') }} p
+left join {{ ref('int_product_pricing') }} p
     on ti.product_id = p.product_id
