@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: executive_sales_dashboard
+    label: Executive Sales Dashboard
+    type: dashboard
+    maturity: low
+
+    description: >
+      Executive Power BI dashboard used to monitor sales performance
+      across stores, products, customers, and time.
+
+    depends_on:
+      - ref('fct_sales')
+
+    owner:
+      name: Baian 
+      email: baian@gmail.com
