@@ -51,10 +51,36 @@ sources:
           Store-level inventory records.
           One row represents the inventory position for one product in one store.
 
+        config:
+          loaded_at_field: loaded_at
+
+          freshness:
+            warn_after:
+              count: 7
+              period: day
+
+            error_after:
+              count: 14
+              period: day
+
+
       - name: transactions
         description: >
           POS transaction header records.
           One row represents one customer purchase or receipt.
+
+        config:
+          loaded_at_field: loaded_at
+
+          freshness:
+            warn_after:
+              count: 7
+              period: day
+
+            error_after:
+              count: 14
+              period: day
+
 
       - name: transaction_items
         description: >

@@ -155,3 +155,8 @@ models:
 
       - name: last_updated_date
         description: Date when the inventory record was last updated.
+
+      - name: loaded_at
+        description: >
+          UTC timestamp indicating when the inventory batch
+          was loaded into the HealthMart raw data warehouse.
