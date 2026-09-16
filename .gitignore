@@ -14,3 +14,16 @@ __pycache__/
 # Logs
 *.log
 logs/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Secrets
+secrets/
+*.json
+
+# Environment variables
+.env
+.env.*
