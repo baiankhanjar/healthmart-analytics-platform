@@ -37,6 +37,12 @@ models:
       - name: transaction_date
         description: Date when the sales transaction occurred.
 
+      - name: loaded_at
+        description: >
+          UTC timestamp indicating when the transaction batch
+          was loaded into the HealthMart raw data warehouse.
+
+
       - name: payment_method
         description: Payment method used by the customer, such as Cash, Credit Card, or Debit Card.
 

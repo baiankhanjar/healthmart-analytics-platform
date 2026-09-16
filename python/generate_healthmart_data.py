@@ -2,6 +2,7 @@ from pathlib import Path
 import pandas as pd
 from faker import Faker
 import random
+from datetime import datetime, timedelta
 
 # Project paths
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -269,16 +270,32 @@ inventory = []
 inventory_counter = 1
 
 for store in stores_df.itertuples():
-    store_products = products_df.sample(frac=0.75, random_state=random.randint(1, 100000))
+    store_products = products_df.sample(
+        frac=0.75,
+        random_state=random.randint(1, 100000)
+    )
 
     for product in store_products.itertuples():
+        last_updated_date = fake.date_between(
+            start_date="-30d",
+            end_date="today"
+        )
+
+        loaded_at = datetime.combine(
+            last_updated_date,
+            datetime.min.time()
+        ) + timedelta(
+            minutes=random.randint(1, 60)
+        )
+
         inventory.append({
             "inventory_id": f"INV{inventory_counter:07}",
             "store_id": store.store_id,
             "product_id": product.product_id,
             "quantity_on_hand": random.randint(0, 500),
             "reorder_level": random.randint(20, 100),
-            "last_updated_date": fake.date_between(start_date="-30d", end_date="today")
+            "last_updated_date": last_updated_date,
+            "loaded_at": loaded_at
         })
 
         inventory_counter += 1
@@ -292,16 +309,30 @@ print(inventory_df.head())
 print(f"Total inventory rows generated: {len(inventory_df)}")
 
 # Generate transactions
+
 transactions = []
 
 payment_methods = ["Credit Card", "Debit Card", "Cash", "Mobile Payment"]
 
 for i in range(1, 5001):
+    transaction_date = fake.date_between(
+        start_date="-2y",
+        end_date="today"
+    )
+
+    loaded_at = datetime.combine(
+        transaction_date,
+        datetime.min.time()
+    ) + timedelta(
+        minutes=random.randint(1, 60)
+    )
+
     transactions.append({
         "transaction_id": f"T{i:07}",
         "customer_id": random.choice(customers_df["customer_id"]),
         "store_id": random.choice(stores_df["store_id"]),
-        "transaction_date": fake.date_between(start_date="-2y", end_date="today"),
+        "transaction_date": transaction_date,
+        "loaded_at": loaded_at,
         "payment_method": random.choice(payment_methods),
         "transaction_total": round(random.uniform(5, 250), 2)
     })
