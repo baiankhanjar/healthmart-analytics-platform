@@ -10,7 +10,7 @@ HealthMart was built from the business requirements forward: define operational 
 
 ## Project Overview
 
-HealthMart represents a healthcare retail organization with physical stores and multiple operational domains, including customers, loyalty accounts, products, suppliers, stores, inventory, point-of-sale transactions, marketing activity, and returns.
+HealthMart represents a healthcare retail organization with physical stores and multiple operational domains, including customers, loyalty accounts, products, suppliers, stores, inventory, and point-of-sale transactions.
 
 Operational systems are designed to run individual business processes, but analytical questions often require data from several systems at once. This project creates a centralized analytics layer that transforms those separate operational datasets into documented, tested, reusable analytical models.
 
@@ -43,8 +43,6 @@ The project began by defining the business processes that generate HealthMart da
 | Inventory Management | Store/product inventory, quantity on hand, reorder levels, and update timestamps |
 | POS Transactions | Transaction headers including customer, store, transaction date, payment method, and total |
 | Transaction Line Items | Product-level detail for each transaction including quantity, unit price, and line total |
-| Marketing Campaigns | Marketing and promotional campaign activity |
-| Returns | Return headers and returned product line items |
 
 ---
 
@@ -60,8 +58,6 @@ The analytical platform was designed to support questions such as:
 - What is the average basket size or transaction value?
 - Where are inventory shortages or low-stock conditions occurring?
 - Which suppliers are associated with stronger product performance?
-- How effective are marketing campaigns and promotions?
-- Which products or categories experience the most returns?
 
 These requirements guided the dimensional model and the grain of the final sales fact table.
 
@@ -135,9 +131,6 @@ Python, pandas, Faker, and randomized business rules are used to create syntheti
 | `inventory.csv` | Store/product inventory and reorder information |
 | `transactions.csv` | POS transaction headers |
 | `transaction_items.csv` | Transaction line-item detail |
-| `campaigns.csv` | Marketing campaign data |
-| `returns.csv` | Return header data |
-| `return_items.csv` | Returned item detail |
 
 Relationships are maintained across generated datasets using identifiers such as `customer_id`, `supplier_id`, `product_id`, `store_id`, and `transaction_id`.
 
