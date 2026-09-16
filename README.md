@@ -388,17 +388,34 @@ merge / append
 
 ## Source Freshness
 
-The source-data design was prepared for dbt source-freshness monitoring through `loaded_at` timestamps.
+Source freshness is configured for the `inventory` and `transactions` sources using their `loaded_at` timestamps.
 
-The dbt freshness command is:
+```yaml
+config:
+  loaded_at_field: loaded_at
+
+  freshness:
+    warn_after:
+      count: 7
+      period: day
+
+    error_after:
+      count: 14
+      period: day
+```
+
+This configuration allows dbt to evaluate how recently these source tables were loaded:
+
+- **Warning:** source data is more than 7 days old.
+- **Error:** source data is more than 14 days old.
+
+Freshness can be checked with:
 
 ```bash
 dbt source freshness
 ```
 
-A complete freshness configuration normally uses a load timestamp plus `warn_after` and `error_after` thresholds.
-
-**Current project status:** load timestamps are present in the source-data design, while the recovered project metadata does not show active freshness thresholds configured on the sources. Source freshness is therefore represented as a prepared/practiced pattern rather than an active production freshness monitor.
+This complements dbt data tests: freshness checks whether source data is arriving on time, while data tests validate the quality and integrity of the data.
 
 ---
 
@@ -480,7 +497,7 @@ The DAG also shows:
 - dimensions and enriched transaction data converging on `fct_sales`
 - `fct_sales` feeding the Executive Sales Dashboard exposure
 
-<img width="1840" height="933" alt="image" src="https://github.com/user-attachments/assets/a20768d6-008e-4938-a2c4-c0507cf8cb8f" />
+<img width="1840" height="933" alt="Screenshot 2026-09-16 103437" src="https://github.com/user-attachments/assets/2db4e4fc-536c-4379-83dc-eb4761f21ef9" />
 
 ---
 
@@ -663,7 +680,7 @@ The core analytics engineering platform is complete as a portfolio implementatio
 - Executive Sales Dashboard exposure
 - Git/GitHub version control and repository security cleanup
 
-Source freshness and State/Slim CI are documented according to their actual project status: the supporting concepts were practiced, but active freshness thresholds and a fully automated CI pipeline are not presented as deployed features.
+Source freshness is configured for the `inventory` and `transactions` sources using `loaded_at`, with 7-day warning and 14-day error thresholds. State/Slim CI concepts were practiced, while a fully automated CI pipeline is not presented as deployed.
 
 ---
 
