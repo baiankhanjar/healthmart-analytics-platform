@@ -27,3 +27,5 @@ secrets/
 # Environment variables
 .env
 .env.*
+# dbt local profile
+profiles.yml
